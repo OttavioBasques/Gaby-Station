@@ -6,7 +6,6 @@
   - Bagel
   - Box
   - Cluster
-  #- Cog # Goobstation - cog is broken
   - Core
   - Fland
   #- Loop #Gabystation - mapa ruim
@@ -29,3 +28,4 @@
   - Falcon #Gabystation
   - Submarine # goobstation - kill yourse
   - Leonid # Goobstation - for goob by goob
+  - Delta # Goobstation - ported from Corvax

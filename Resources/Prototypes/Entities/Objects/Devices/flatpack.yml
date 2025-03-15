@@ -35,6 +35,9 @@
       cpu_supply: "#A46106"
   - type: StaticPrice
     price: 250
+  - type: Tag
+    tags:
+    - DroneUsable # Goobstation
 
 - type: entity
   parent: BaseFlatpack
@@ -119,8 +122,8 @@
     - state: singularity-generator
   - type: GuideHelp
     guides:
-      - SingularityEngine
-      - Power
+    - SingularityEngine
+    - Power
 
 - type: entity
   parent: BaseFlatpack

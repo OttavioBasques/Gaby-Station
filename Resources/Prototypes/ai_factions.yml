@@ -12,6 +12,7 @@
     - Blob # Goobstation - Blob
   friendly: # Goobstation
     - Wizard
+    - PirateFaction # goob - pirates
 
 - type: npcFaction
   id: NanoTrasen
@@ -26,7 +27,8 @@
   - Changeling # goob edit - changelings
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
-  - Wizard # goob edit - wizard
+  - Wizard
+  - PirateFaction # goob - pirates
 
 - type: npcFaction
   id: Mouse
@@ -59,6 +61,7 @@
   - AllHostile
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
+  - PirateFaction # goob - pirates
   friendly: # Goobstation
     - Wizard
 
@@ -79,6 +82,7 @@
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
   - Wizard # goob edit - wizard
+  - PirateFaction # goob - pirates
   friendly: # DeltaV Nukie hostage ops
   - Hostage
 
@@ -94,6 +98,7 @@
   - AllHostile
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
+  - PirateFaction # goob - pirates
   friendly: # Goobstation
     - Wizard
 
@@ -112,6 +117,7 @@
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
   - Wizard # goob edit - wizard
+  - PirateFaction # goob - pirates
 
 - type: npcFaction
   id: Revolutionary
@@ -123,6 +129,7 @@
   - AllHostile
   - Blob # Goobstation - Blob
   - Wizard # Goobstation - wizard
+  - PirateFaction # goob - pirates
 
 - type: npcFaction
   id: AllHostile
@@ -142,3 +149,4 @@
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
   - Wizard # goob edit - wizard
+  - PirateFaction # goob - pirates

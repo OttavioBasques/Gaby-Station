@@ -75,3 +75,6 @@
 
 - files: ["leonid.yml"]
   authors: Gallagin, Derball
+
+- files: ["delta.yml"]
+  authors: Corvax team, pheenty
