@@ -73,11 +73,8 @@
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
       slots:
-      - back
-      - suitstorage
+      - suitStorage
       clothingVisuals:
-        back:
-        - state: riot-backpack
         suitstorage:
         - state: riot-backpack
     - type: Blocking
@@ -104,11 +101,8 @@
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
       slots:
-      - back
-      - suitstorage
+      - suitStorage
       clothingVisuals:
-        back:
-        - state: riot-laser-backpack
         suitstorage:
         - state: riot-laser-backpack
     - type: Item
@@ -135,11 +129,8 @@
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
       slots:
-      - back
-      - suitstorage
+      - suitStorage
       clothingVisuals:
-        back:
-        - state: riot-bullet-backpack
         suitstorage:
         - state: riot-bullet-backpack
     - type: Item
@@ -168,11 +159,8 @@
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
       slots:
-      - back
-      - suitstorage
+      - suitStorage
       clothingVisuals:
-        back:
-        - state: buckler-backpack
         suitstorage:
         - state: buckler-backpack
       heldPrefix: buckler
@@ -233,11 +221,8 @@
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
       slots:
-      - back
-      - suitstorage
+      - suitStorage
       clothingVisuals:
-        back:
-        - state: metal-backpack
         suitstorage:
         - state: metal-backpack
       heldPrefix: metal
@@ -351,11 +336,8 @@
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
       slots:
-      - back
-      - suitstorage
+      - suitStorage
       clothingVisuals:
-        back:
-        - state: ratvarian-backpack
         suitstorage:
         - state: ratvarian-backpack
     - type: Item
