@@ -72,6 +72,9 @@
       price: 90
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
+      slots:
+      - back
+      - suitstorage
       clothingVisuals:
         back:
         - state: riot-backpack
@@ -100,6 +103,9 @@
       state: riot_laser-icon
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
+      slots:
+      - back
+      - suitstorage
       clothingVisuals:
         back:
         - state: riot-laser-backpack
@@ -128,6 +134,9 @@
       state: riot_bullet-icon
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
+      slots:
+      - back
+      - suitstorage
       clothingVisuals:
         back:
         - state: riot-bullet-backpack
@@ -158,6 +167,9 @@
     - type: Item
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
+      slots:
+      - back
+      - suitstorage
       clothingVisuals:
         back:
         - state: buckler-backpack
@@ -220,6 +232,9 @@
     - type: Item
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
+      slots:
+      - back
+      - suitstorage
       clothingVisuals:
         back:
         - state: metal-backpack
@@ -335,6 +350,9 @@
       state: ratvarian-icon
     - type: Clothing
       sprite: Objects/Weapons/Melee/shields.rsi
+      slots:
+      - back
+      - suitstorage
       clothingVisuals:
         back:
         - state: ratvarian-backpack
