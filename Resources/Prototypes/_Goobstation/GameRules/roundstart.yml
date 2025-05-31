@@ -19,8 +19,10 @@
 # SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 # SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 # SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 # SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -32,6 +34,9 @@
   - type: ChangelingRule
   - type: GameRule
     minPlayers: 15
+  - type: StationEvent
+    chaosScore: 600
+    eventType: Roundstart
   - type: AntagRandomObjectives
     sets:
     - groups: ChangelingObjectiveGroups
@@ -63,6 +68,9 @@
   components:
   - type: GameRule
     minPlayers: 30
+  - type: StationEvent
+    chaosScore: 700
+    eventType: Roundstart
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
     definitions:
@@ -86,6 +94,9 @@
   components:
   - type: GameRule
     minPlayers: 30
+  - type: StationEvent
+    chaosScore: 450
+    eventType: Roundstart
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
     agentName: changeling-roundend-name
@@ -105,7 +116,10 @@
   id: Calmops # For Dual Antag Gamemodes / Funky: For gamemodes that need nerfed antags
   components:
   - type: GameRule
-    minPlayers: 40
+    minPlayers: 30
+  - type: StationEvent
+    chaosScore: 1000
+    eventType: Roundstart
   - type: LoadMapRule
     mapPath: /Maps/_Goobstation/Nonstations/nukieplanet.yml
   - type: NukieOperation
@@ -145,6 +159,8 @@
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: SurgerySpeedModifier # shitmed
+        speedModifier: 2
       mindRoles:
       - MindRoleNukeopsMedic
     - prefRoles: [ Nukeops ]
@@ -175,6 +191,9 @@
   components:
   - type: GameRule
     minPlayers: 30
+  - type: StationEvent
+    chaosScore: 700
+    eventType: Roundstart
   - type: RevolutionaryRule
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
@@ -202,6 +221,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: BlobRule
+  - type: StationEvent
+    chaosScore: 900
+    eventType: Roundstart
 
 - type: entity
   id: BlobGameMode
@@ -211,6 +233,9 @@
   - type: BlobRule
   - type: GameRule
     minPlayers: 15
+  - type: StationEvent
+    chaosScore: 900
+    eventType: Roundstart
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
     definitions:
@@ -248,6 +273,8 @@
       Power: 70
       Medical: 70
       Atmos: 70
+    eventType: HostilesSpawn
+    chaosScore: 900
   - type: BlobSpawnRule
     carrierBlobProtos:
     - SpawnPointGhostBlobRat
@@ -304,6 +331,8 @@
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: SurgerySpeedModifier # shitmed
+        speedModifier: 2
       mindRoles:
       - MindRoleNukeopsMedic
     - prefRoles: [ Nukeops ]
@@ -332,6 +361,9 @@
   id: Devil
   components:
   - type: DevilRule
+  - type: StationEvent
+    eventType: Roundstart
+    chaosScore: 250 # low since they tend to revive people and stuff
   - type: GameRule
     minPlayers: 15
   - type: AntagObjectives
