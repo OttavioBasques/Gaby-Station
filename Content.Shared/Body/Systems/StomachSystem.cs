@@ -23,19 +23,18 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Server.Body.Components;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.Body.Organ;
+using Content.Shared.Body.Components;
 using Content.Shared.Body.Events;
+using Content.Shared.Body.Organ;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Whitelist;
-using Content.Shared.Chemistry.EntitySystems;
 using Robust.Shared.Containers;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Body.Systems
+namespace Content.Shared.Body.Systems
 {
     public sealed class StomachSystem : EntitySystem
     {
