@@ -142,6 +142,13 @@
       time: 36000 #10 hrs
     - !type:OverallPlaytimeRequirement
       time: 144000 #40 hrs
+    - !type:AgeRequirement
+      requiredAge: 21
+    # Goobstation - Siouxcide, prevent felinids from playing command
+    - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Felinid
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"
@@ -163,7 +170,14 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+<<<<<<< HEAD
+  alternateTitles:
+  - CETitleSupervisor
+  - CETitleForeman
+  - CETitleManager
+=======
       - type: EngineeringStaff # Goobstation
+>>>>>>> gaby
 
 - type: startingGear
   id: ChiefEngineerGear
@@ -176,3 +190,15 @@
     back:
     - Flash
     - TelescopicBaton # Goobstation
+
+- type: jobAlternateTitle
+  id: CETitleSupervisor
+  name: job-name-alt-ce-supervisor
+
+- type: jobAlternateTitle
+  id: CETitleForeman
+  name: job-name-alt-ce-foreman
+
+- type: jobAlternateTitle
+  id: CETitleManager
+  name: job-name-alt-ce-manager

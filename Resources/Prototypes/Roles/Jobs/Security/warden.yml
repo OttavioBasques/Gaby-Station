@@ -159,8 +159,12 @@
   - !type:AddComponentSpecial # goobstation
     components:
       - type: SecurityStaff
+  alternateTitles:
+  - WardenTitleClerk
+  - WardenTitleChief
+  - WardenTitleDispacher
+  - WardenTitleManager
 
-- type: startingGear
   id: WardenGear
   equipment:
     eyes: ClothingEyesGlassesSecurity
@@ -171,4 +175,21 @@
     back:
     - Flash
     - MagazinePistol
+    - SecHypo # Goobstation
     - ClothingMaskGasSecurity # Goobstation
+
+- type: jobAlternateTitle
+  id: WardenTitleClerk
+  name: job-name-alt-warden-clerk
+
+- type: jobAlternateTitle
+  id: WardenTitleChief
+  name: job-name-alt-warden-chief
+
+- type: jobAlternateTitle
+  id: WardenTitleDispacher
+  name: job-name-alt-warden-dispacher
+
+- type: jobAlternateTitle
+  id: WardenTitleManager
+  name: job-name-alt-warden-manager
