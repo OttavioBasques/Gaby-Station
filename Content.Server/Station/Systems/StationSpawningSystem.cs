@@ -285,9 +285,10 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
         var gearEquippedEv = new StartingGearEquippedEvent(entity.Value);
         RaiseLocalEvent(entity.Value, ref gearEquippedEv);
 
-        if (_configurationManager.GetCVar(GabyCVars.ICAlternateJobTitlesEnable))
+        if (profile is not null && prototype is not null && _configurationManager.GetCVar(GabyCVars.ICAlternateJobTitlesEnable))
         {
             if (profile.JobAlternateTitles.TryGetValue(prototype.ID, out var altTitleId))
+            {
                 if (_prototypeManager.TryIndex(altTitleId, out var altTitle))
                     SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, altTitle);
             }
@@ -298,10 +299,10 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
         }
 
         _humanoidSystem.LoadProfile(entity.Value, profile);
-        _metaSystem.SetEntityName(entity.Value, profile.Name);
-        if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
+        _metaSystem.SetEntityName(entity.Value, profile?.Name ?? "");
+        if (profile is not null && profile?.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
         {
-            AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+            AddComp<DetailExaminableComponent>(entity.Value).Content = profile?.FlavorText ?? "";
         }
 
         DoJobSpecials(job, entity.Value);
