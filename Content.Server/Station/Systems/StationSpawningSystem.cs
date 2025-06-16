@@ -262,6 +262,19 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
         if (profile != null)
         {
+            if (prototype is not null && _configurationManager.GetCVar(GabyCVars.ICAlternateJobTitlesEnable))
+            {
+                if (profile.JobAlternateTitles.TryGetValue(prototype.ID, out var altTitleId))
+                {
+                    if (_prototypeManager.TryIndex(altTitleId, out var altTitle))
+                        SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, altTitle);
+                }
+                else
+                {
+                    SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, null);
+                }
+            }
+
             _humanoidSystem.LoadProfile(entity.Value, profile);
             _metaSystem.SetEntityName(entity.Value, profile.Name);
 
@@ -284,26 +297,6 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
         var gearEquippedEv = new StartingGearEquippedEvent(entity.Value);
         RaiseLocalEvent(entity.Value, ref gearEquippedEv);
-
-        if (profile is not null && prototype is not null && _configurationManager.GetCVar(GabyCVars.ICAlternateJobTitlesEnable))
-        {
-            if (profile.JobAlternateTitles.TryGetValue(prototype.ID, out var altTitleId))
-            {
-                if (_prototypeManager.TryIndex(altTitleId, out var altTitle))
-                    SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, altTitle);
-            }
-            else
-            {
-                SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, null);
-            }
-        }
-
-        _humanoidSystem.LoadProfile(entity.Value, profile);
-        _metaSystem.SetEntityName(entity.Value, profile?.Name ?? "");
-        if (profile is not null && profile?.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
-        {
-            AddComp<DetailExaminableComponent>(entity.Value).Content = profile?.FlavorText ?? "";
-        }
 
         DoJobSpecials(job, entity.Value);
         _identity.QueueIdentityUpdate(entity.Value);
