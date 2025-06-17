@@ -268,11 +268,11 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
                 {
                     if (_prototypeManager.TryIndex(altTitleId, out var altTitle))
                         SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, altTitle);
+                    else
+                        SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, null);
                 }
                 else
-                {
                     SetPdaAndIdCardData(entity.Value, profile.Name, prototype, station, null);
-                }
             }
 
             _humanoidSystem.LoadProfile(entity.Value, profile);
