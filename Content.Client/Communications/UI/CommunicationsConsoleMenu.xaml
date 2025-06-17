@@ -55,11 +55,15 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                     ToolTip="{Loc 'comms-console-menu-alert-level-button-tooltip'}"
                     StyleClasses="OpenRight"/>
 
+                <Button Name="CentCommButton" Text="{Loc 'comms-console-menu-message-centcomm'}" StyleClasses="ButtonColorGreen" Access="Public" />
+
             </BoxContainer>
 
             <!-- EmergencyPart -->
             <BoxContainer Orientation="Vertical"
                 SeparationOverride="6">
+
+                <Button Name="MaintEmergencyButton" Text="{Loc 'comms-console-menu-emergency-maint'}" StyleClasses="ButtonColorCaution"  Access="Public" />
 
                 <RichTextLabel Name="CountdownLabel"/>
 

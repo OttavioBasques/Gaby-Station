@@ -123,8 +123,8 @@ namespace Content.Client.Communications.UI
         public event Action<string>? OnAnnounce;
         public event Action<string>? OnBroadcast;
 
-        public event Action? OnCentcomm;
-        public event Action? OnMaint;
+        public event Action? OnCentcomm; // Gabystation
+        public event Action? OnMaint; // Gabystation
 
         public CommunicationsConsoleMenu()
         {
@@ -169,6 +169,9 @@ namespace Content.Client.Communications.UI
 
             EmergencyShuttleButton.OnPressed += _ => OnEmergencyLevel?.Invoke();
             EmergencyShuttleButton.Disabled = !CanCall;
+
+            MaintEmergencyButton.OnPressed += _ => OnCentcomm?.Invoke(); // Gabystation
+            CentCommButton.OnPressed += _ => OnMaint?.Invoke(); // Gabystation
 
             UpdateCountdown();
         }
