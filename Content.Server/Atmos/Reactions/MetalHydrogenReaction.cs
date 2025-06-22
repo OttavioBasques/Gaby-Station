@@ -1,13 +1,14 @@
+// SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
+// SPDX-FileCopyrightText: 2025 Kyoth25f <kyoth25f@gmail.com>
+// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Reactions;
-using Content.Shared.Chemistry.Components;
-using Content.Shared.FixedPoint;
-using Content.Shared.Maps;
-using Robust.Shared.Map;
 using JetBrains.Annotations;
 using Robust.Shared.Map.Components;
-using System.Numerics;
 
 namespace Content.Server.Atmos.Reactions
 {
@@ -38,9 +39,9 @@ namespace Content.Server.Atmos.Reactions
 
             mixture.AdjustMoles(Gas.Hydrogen, -300f);
             mixture.AdjustMoles(Gas.BZ, -50f);
-            
+
             var tileRef = atmosphereSystem.GetTileRef(tile);
-            
+
             var gridId = tileRef.GridUid;
 
             var entityManager = IoCManager.Resolve<IEntityManager>();
