@@ -400,3 +400,9 @@ Entries:
         pesquisa e usam urânio ao invés de ouro. "Cargoo? Cade os minérios?"
   id: 47
   time: '2025-06-23T23:23:11.0000000+00:00'
+- author: Arguemeu, kbarkevich, Rainbeon
+  changes:
+    - type: Add
+      message: Adiciona culto de sangue ao jogo, viva ao nosso lorde nar'sie!
+  id: 48
+  time: '2025-06-23T23:29:56.0000000+00:00'
