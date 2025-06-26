@@ -475,3 +475,12 @@ Entries:
       message: POP de alertas recebeu uma atualização
   id: 56
   time: '2025-06-26T18:46:19.0000000+00:00'
+- author: Dreykor
+  changes:
+    - type: Fix
+      message: >-
+        Correções em um bug que desabilitava metade de substituições de falas
+        abreviadas, agora, por exemplo, falar qm no chat vai ser substituido por
+        intendente de carga, e por ai vai.
+  id: 57
+  time: '2025-06-26T21:14:38.0000000+00:00'
