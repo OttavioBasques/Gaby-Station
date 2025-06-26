@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
+# SPDX-FileCopyrightText: 2025 Kyoth25f <41803390+Kyoth25f@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Kyoth25f <kyoth25f@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   id: BluespaceSender
   parent: [ BaseMachinePowered, ConstructibleMachine ]
@@ -111,7 +117,7 @@
         enum.BluespaceVendorVisualLayers.Tank:
           False: { state: tank, visible: false }
           True: { state: tank, visible: true }
-      enum.BluespaceVendorVisuals.IhfrsPumping:
+      enum.BluespaceVendorVisuals.IsPumping:
         enum.BluespaceVendorVisualLayers.Pumping:
           False: { state: pumping, visible: false }
           True: { state: pumping, visible: true }
