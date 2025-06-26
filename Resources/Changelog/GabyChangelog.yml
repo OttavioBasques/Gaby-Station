@@ -465,3 +465,13 @@ Entries:
         para head revs!
   id: 55
   time: '2025-06-26T14:09:00.0000000+00:00'
+- author: AgentePanela
+  changes:
+    - type: Add
+      message: Novas entradas na POP e uma nova Lei
+    - type: Tweak
+      message: O console de comunicações ganhou uma nova opção
+    - type: Tweak
+      message: POP de alertas recebeu uma atualização
+  id: 56
+  time: '2025-06-26T18:46:19.0000000+00:00'
