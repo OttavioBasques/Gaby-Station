@@ -240,6 +240,7 @@ public abstract partial class SharedMoverController : VirtualController
     {
         var canMove = mover.CanMove;
         if (RelayTargetQuery.TryGetComponent(uid, out var relayTarget))
+<<<<<<< HEAD
         {   // IsDead - softcrit
             if (_mobState.IsIncapacitated(relayTarget.Source) ||
                 TryComp<SleepingComponent>(relayTarget.Source, out _) ||
@@ -248,10 +249,30 @@ public abstract partial class SharedMoverController : VirtualController
                 !MoverQuery.TryGetComponent(relayTarget.Source, out var relayedMover) ||
                 !XformQuery.TryGetComponent(relayTarget.Source, out var relayedXform) ||
                 _mobState.IsCritical(relayTarget.Source) && !_configManager.GetCVar(CCVars.AllowMovementWhileCrit))
+=======
+        {
+            if (_mobState.IsIncapacitated(relayTarget.Source) ||
+                TryComp<SleepingComponent>(relayTarget.Source, out _) ||
+                !MoverQuery.TryGetComponent(relayTarget.Source, out var relayedMover))
+>>>>>>> parent of 224a6225d1 ([PORT] Soft Crit do Einstein Engines (#81))
             {
                 canMove = false;
             }
             else
+<<<<<<< HEAD
+=======
+            {
+                mover.RelativeEntity = relayedMover.RelativeEntity;
+                mover.RelativeRotation = relayedMover.RelativeRotation;
+                mover.TargetRelativeRotation = relayedMover.TargetRelativeRotation;
+            }
+        }
+
+        // Update relative movement
+        if (mover.LerpTarget < Timing.CurTime)
+        {
+            if (TryUpdateRelative(mover, xform))
+>>>>>>> parent of 224a6225d1 ([PORT] Soft Crit do Einstein Engines (#81))
             {
                 mover.LerpTarget = relayedMover.LerpTarget;
                 mover.RelativeEntity = relayedMover.RelativeEntity;
