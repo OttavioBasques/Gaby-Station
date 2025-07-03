@@ -490,3 +490,9 @@ Entries:
       message: A estação Gamma está de volta e atualizada!!!1!
   id: 58
   time: '2025-06-29T15:36:24.0000000+00:00'
+- author: Dreykor
+  changes:
+    - type: Fix
+      message: Correção no audio do alerta da lei marcial, pra causar mais medo.
+  id: 59
+  time: '2025-07-03T21:35:50.0000000+00:00'
