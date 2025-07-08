@@ -6,6 +6,8 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Server.Maps;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Server.Shuttles.Components;
@@ -23,7 +25,8 @@ public sealed partial class StationCentcommComponent : Component
     public float ShuttleIndex;
 
     [DataField]
-    public ResPath Map = new("/Maps/centcomm.yml");
+    //public ResPath Map = new("/Maps/centcomm.yml");
+    public ProtoId<GameMapPrototype> Map = "CentComm";
 
     /// <summary>
     /// Centcomm entity that was loaded.

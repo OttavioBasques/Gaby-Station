@@ -108,6 +108,8 @@ using Content.Shared.DeviceNetwork.Components;
 using Content.Shared.Random;
 using Robust.Shared.Prototypes;
 using Content.Shared.Random.Helpers;
+using Content.Server.GameTicking;
+using Content.Server.Maps;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -140,10 +142,12 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!; // Gabystation change
+    [Dependency] private readonly GameTicker _ticker = default!; // Gabystation change
 
     private const float ShuttleSpawnBuffer = 1f;
 
     private bool _emergencyShuttleEnabled;
+    private bool _randomCentcomEnabled;
 
     [ValidatePrototypeId<TagPrototype>]
     private const string DockTag = "DockEmergency";
@@ -615,12 +619,14 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
 
         // Gabystation change start
         if (!_prototype.TryIndex<WeightedRandomPrototype>(MapsProto, out var maps))
-        {
             Log.Error($"Random centcomm prototype '{MapsProto}' not found. Using default centcomm map.");
-        }
         else
+            component.Map = new ProtoId<GameMapPrototype>(maps.Pick(_random));
+
+        if (!_prototype.TryIndex<GameMapPrototype>(component.Map, out var gameMap))
         {
-            component.Map = new ResPath(maps.Pick(_random));
+            Log.Warning("Error during CentComm game map indexing, skipping setup.");
+            return;
         }
 
         if (string.IsNullOrEmpty(component.Map.ToString()))
@@ -630,11 +636,12 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         }
 
         var map = _mapSystem.CreateMap(out var mapId);
-        if (!_loader.TryLoadGrid(mapId, component.Map, out var grid))
+        var grid = _ticker.MergeGameMap(gameMap, mapId)[0];
+        /*if (!_loader.TryLoadGrid(mapId, component.Map, out var grid))
         {
             Log.Error($"Failed to set up centcomm grid!");
             return;
-        }
+        }*/
 
         if (!Exists(map))
         {
@@ -650,7 +657,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
             return;
         }
 
-        var xform = Transform(grid.Value);
+        var xform = Transform(grid);
         if (xform.ParentUid != map || xform.MapUid != map)
         {
             Log.Error($"Centcomm grid is not parented to its own map?");
