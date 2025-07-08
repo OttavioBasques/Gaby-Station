@@ -528,3 +528,11 @@ Entries:
         jukebox.
   id: 62
   time: '2025-07-04T22:52:23.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Tweak
+      message: Atualiza a versão da engine para 263.0.0!
+    - type: Fix
+      message: As animações das firelock abrindo e fechando foram corrigidas!
+  id: 63
+  time: '2025-07-08T14:41:29.0000000+00:00'
