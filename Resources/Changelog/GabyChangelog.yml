@@ -1,20 +1,3 @@
-# SPDX-FileCopyrightText: 2024 Daniela <daniela.paladinof@gmail.com>
-# SPDX-FileCopyrightText: 2024 Felipealmeidaz <zeccky123@gmail.com>
-# SPDX-FileCopyrightText: 2024 Renan Lenhare <lenhare@outlook.com>
-# SPDX-FileCopyrightText: 2025 AgentePanela <agentepanela@gmail.com>
-# SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
-# SPDX-FileCopyrightText: 2025 Dreykor <160512778+Dreykor@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Dreykor <Dreykor12@gmail.com>
-# SPDX-FileCopyrightText: 2025 Eduardo Oliveira <jubileu1232020@gmail.com>
-# SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
-# SPDX-FileCopyrightText: 2025 Kyoth25f <41803390+Kyoth25f@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Kyoth25f <kyoth25f@gmail.com>
-# SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 White <68350815+DoutorWhite@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 skysnowflok <jubileu1232020@gmail.com>
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 Name: Gaby
 Order: -2
 Entries:
@@ -545,3 +528,11 @@ Entries:
       message: As animações das firelock abrindo e fechando foram corrigidas!
   id: 63
   time: '2025-07-08T14:41:29.0000000+00:00'
+- author: slarticodefast, Vonsant and Will-Oliver-Br
+  changes:
+    - type: Add
+      message: 'A lista de medalhas condecoradas agora é exibida no final da rodada.  '
+    - type: Tweak
+      message: 'Todas as medalhas agora permitem especificar o motivo da condecoração.  '
+  id: 64
+  time: '2025-07-13T00:07:46.0000000+00:00'
