@@ -129,6 +129,7 @@
 # SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 # SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Paulo Artur Pinheiro Viana Villaça <112904295+AlgumCorrupto@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 # SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
@@ -191,7 +192,7 @@
     - id: KingRatMigration
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
-    - id: RevenantSpawn
+  # - id: RevenantSpawn # Gabystation - desativa revenant
     - id: SleeperAgents
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
@@ -502,16 +503,16 @@
   id: RevenantSpawn
   components:
   - type: StationEvent
-    weight: 3.5
+    weight: 2.5
     duration: 1
-    earliestStart: 30
-    minimumPlayers: 20
+    earliestStart: 40
+    minimumPlayers: 30
     chaos: # Goobstation
-      Hostile: 20
+      Hostile: 50
       Friend: 20
-      Combat: 40
-      Death: 100
-      Medical: 100
+      Combat: 70
+      Death: 200
+      Medical: 200
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
@@ -574,6 +575,7 @@
       Medical: 15
   - type: FalseAlarmRule
 
+# todo: desativar isso
 - type: entity
   parent: BaseWizardRule
   id: WizardSpawn
@@ -583,7 +585,7 @@
     duration: 1
     earliestStart: 30
     reoccurrenceDelay: 60
-    minimumPlayers: 10
+    minimumPlayers: 40 # Gaby station - wizard é caos
     chaos:
       Hostile: 150
       Friend: 150
@@ -596,7 +598,7 @@
       Medical: 50
       Atmos: 50
   - type: AntagSelection
-    agentName: wizard-round-end-name
+    #agentName: wizard-round-end-name
     definitions:
     - spawnerPrototype: SpawnPointGhostWizard
       min: 1
