@@ -590,3 +590,11 @@ Entries:
       message: Adiciona blood cult como possivel modo round start.
   id: 69
   time: '2025-07-18T15:58:06.0000000+00:00'
+- author: AgentePanela
+  changes:
+    - type: Add
+      message: Patrocinadores são fundadores da Nanotrasen
+    - type: Add
+      message: '"João Nanotrasen"'
+  id: 70
+  time: '2025-07-18T16:03:56.0000000+00:00'
