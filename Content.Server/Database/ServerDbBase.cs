@@ -93,6 +93,7 @@
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 // SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
 // SPDX-FileCopyrightText: 2025 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 DrSmugleaf <drsmugleaf@gmail.com>
 // SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
@@ -2175,6 +2176,25 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             return true;
         }
 
+        #endregion
+
+        #region Comedy
+
+        public async Task<List<Guid>> GetAllSpiderFriends()
+        {
+            await using var db = await GetDb();
+            return await db.DbContext.GoobMisandrySpiderFriends
+                .Select(p => p.Guid)
+                .ToListAsync();
+        }
+
+        public async Task AddSpiderFriend(SpiderFriend friend)
+        {
+            await using var db = await GetDb();
+            db.DbContext.GoobMisandrySpiderFriends.Add(friend);
+
+            await db.DbContext.SaveChangesAsync();
+        }
         #endregion
 
         public abstract Task SendNotification(DatabaseNotification notification);
