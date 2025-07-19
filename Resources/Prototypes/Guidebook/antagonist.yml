@@ -48,6 +48,7 @@
   - Abductors # Shitmed - Abductors
   - Bingle # Goob content
   - Devil # Goob content
+  - Vampires
 
 - type: guideEntry
   id: Traitors
@@ -83,3 +84,13 @@
   id: Thieves
   name: guide-entry-thieves
   text: "/ServerInfo/Guidebook/Antagonist/Thieves.xml"
+
+- type: guideEntry
+  id: Vampires
+  name: guide-entry-vampires
+  text: "/ServerInfo/Guidebook/Antagonist/Vampires.xml"
+
+# - type: guideEntry # Gaby - Correção ID duplicado
+#   id: Abductors
+#   name: guide-entry-abductors
+#   text: "/ServerInfo/Guidebook/Antagonist/Abductors.xml"
