@@ -120,9 +120,9 @@
     voltage: Medium
   - type: PowerNetworkBattery
     maxSupply: 150000
-    maxChargeRate: 5000
+    maxChargeRate: 150000
     supplyRampTolerance: 5000
-    supplyRampRate: 1000
+    supplyRampRate: 5000
   - type: StationInfiniteBatteryTarget
 
   # Interface
