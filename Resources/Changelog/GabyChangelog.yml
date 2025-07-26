@@ -703,3 +703,12 @@ Entries:
       message: O mapa "Barratry" foi removido da rotação de mapas, mas não do jogo.
   id: 81
   time: '2025-07-26T10:40:51.0000000+00:00'
+- author: SrKolobanov
+  changes:
+    - type: Add
+      message: >-
+        Novas armas: Rifle de assalto MA56XF, pistola MX3-R. Elas podem ser
+        pesquisadas no Computador de P&D e serem fabricadas no torno da
+        Segurança. Legendas em português inclusas.
+  id: 82
+  time: '2025-07-26T10:55:36.0000000+00:00'
