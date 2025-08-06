@@ -99,6 +99,7 @@
     solution: tank
   - type: ExaminableSolution
     solution: tank
+    exactVolume: true
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
       Steel: 62
@@ -106,7 +107,7 @@
   - type: StaticPrice #Goobstation - Recycle update
     price: 50
 
-# Assmos - Extinguisher Nozzle
+# Assmos - Extinguisher Nozzle #todo marty WHY IS THIS IN WIZYAML!
 - type: entity
   parent: Clothing
   id: ClothingBackpackFirefighterTank
