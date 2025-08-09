@@ -625,6 +625,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         {
             component.Map = new ResPath(maps.Pick(_random));
         }
+        // Gabystation change end
 
         if (string.IsNullOrEmpty(component.Map.ToString()))
         {
