@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 AgentePanela <agentepanela@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: gameMap
   id: OldCentComm
   isGrid: true # Did you know that centcomm is the only "game map" that isn't actually a map? Send help.
