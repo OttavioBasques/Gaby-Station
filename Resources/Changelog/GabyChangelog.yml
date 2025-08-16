@@ -811,3 +811,9 @@ Entries:
         Game Director
   id: 91
   time: '2025-08-09T01:42:27.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Fix
+      message: Bug do Comando Central não spawnando e a evacuação não vindo corrigido.
+  id: 92
+  time: '2025-08-16T13:56:38.0000000+00:00'
