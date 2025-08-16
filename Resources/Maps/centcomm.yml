@@ -5104,6 +5104,7 @@ entities:
     - type: Transform
       pos: 16.5,1.5
       parent: 1668
+<<<<<<< HEAD
 - proto: AdminHypo
   entities:
   - uid: 797
@@ -5124,6 +5125,12 @@ entities:
     components:
     - type: Transform
       pos: 15.5,-20.5
+=======
+  - uid: 2742
+    components:
+    - type: Transform
+      pos: 4.5448904,18.624214
+>>>>>>> goob/master
       parent: 1668
 - proto: AirCanister
   entities:
@@ -41075,7 +41082,185 @@ entities:
     - type: Transform
       pos: -13.5,-3.5
       parent: 1668
+<<<<<<< HEAD
   - uid: 2652
+=======
+- proto: HighSecCommandLocked
+  entities:
+  - uid: 123
+    components:
+    - type: Transform
+      pos: 32.5,-14.5
+      parent: 1668
+- proto: HighSecDoor
+  entities:
+  - uid: 565
+    components:
+    - type: Transform
+      pos: 18.5,-6.5
+      parent: 1668
+  - uid: 5932
+    components:
+    - type: Transform
+      pos: -15.5,-32.5
+      parent: 1668
+- proto: HolopadCentComm
+  entities:
+  - uid: 3841
+    components:
+    - type: Transform
+      pos: -0.5,-0.5
+      parent: 1668
+- proto: HospitalCurtainsOpen
+  entities:
+  - uid: 3422
+    components:
+    - type: Transform
+      pos: -20.5,15.5
+      parent: 1668
+- proto: JanitorialTrolley
+  entities:
+  - uid: 2881
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -17.5,-31.5
+      parent: 1668
+- proto: JawsOfLife
+  entities:
+  - uid: 4261
+    components:
+    - type: Transform
+      pos: 21.501507,-22.363987
+      parent: 1668
+- proto: KitchenMicrowave
+  entities:
+  - uid: 2226
+    components:
+    - type: Transform
+      pos: -15.5,17.5
+      parent: 1668
+  - uid: 4585
+    components:
+    - type: Transform
+      pos: -11.5,-24.5
+      parent: 1668
+  - uid: 4589
+    components:
+    - type: Transform
+      pos: -11.5,-28.5
+      parent: 1668
+- proto: KitchenReagentGrinder
+  entities:
+  - uid: 2922
+    components:
+    - type: Transform
+      pos: 3.5,-9.5
+      parent: 1668
+  - uid: 4590
+    components:
+    - type: Transform
+      pos: -11.5,-25.5
+      parent: 1668
+  - uid: 4591
+    components:
+    - type: Transform
+      pos: -9.5,-28.5
+      parent: 1668
+- proto: KitchenSpike
+  entities:
+  - uid: 4581
+    components:
+    - type: Transform
+      pos: -7.5,-21.5
+      parent: 1668
+- proto: KnifePlastic
+  entities:
+  - uid: 3726
+    components:
+    - type: Transform
+      pos: 0.9231305,-25.45219
+      parent: 1668
+  - uid: 4253
+    components:
+    - type: Transform
+      pos: 0.9231305,-25.45219
+      parent: 1668
+  - uid: 5214
+    components:
+    - type: Transform
+      pos: 0.9231305,-25.45219
+      parent: 1668
+- proto: Lamp
+  entities:
+  - uid: 2829
+    components:
+    - type: Transform
+      pos: 5.496662,21.877665
+      parent: 1668
+  - uid: 3626
+    components:
+    - type: Transform
+      pos: -20.472635,6.7337127
+      parent: 1668
+  - uid: 3627
+    components:
+    - type: Transform
+      pos: -20.48826,12.764963
+      parent: 1668
+- proto: LampGold
+  entities:
+  - uid: 3628
+    components:
+    - type: Transform
+      pos: -16.37576,12.926986
+      parent: 1668
+- proto: LampInterrogator
+  entities:
+  - uid: 3621
+    components:
+    - type: Transform
+      pos: -0.9167746,1.8699629
+      parent: 1668
+- proto: LargeBeaker
+  entities:
+  - uid: 5066
+    components:
+    - type: Transform
+      pos: -10.010703,-28.243814
+      parent: 1668
+- proto: Lighter
+  entities:
+  - uid: 3754
+    components:
+    - type: Transform
+      pos: -18.379215,8.381029
+      parent: 1668
+- proto: LockerAtmosphericsFilledHardsuit
+  entities:
+  - uid: 3790
+    components:
+    - type: Transform
+      pos: 15.5,-29.5
+      parent: 1668
+- proto: LockerBoozeFilled
+  entities:
+  - uid: 4417
+    components:
+    - type: Transform
+      pos: 10.5,-28.5
+      parent: 1668
+- proto: LockerChemistryFilled
+  entities:
+  - uid: 2876
+    components:
+    - type: Transform
+      pos: 5.5,-13.5
+      parent: 1668
+- proto: LockerChiefEngineerFilled
+  entities:
+  - uid: 6491
+>>>>>>> goob/master
     components:
     - type: Transform
       pos: -14.5,-3.5
