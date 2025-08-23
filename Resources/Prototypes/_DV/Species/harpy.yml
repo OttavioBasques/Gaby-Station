@@ -5,10 +5,8 @@
 # SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Michelle Szinger <chell@alterae.online>
-# SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 # SPDX-FileCopyrightText: 2025 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Rouge2t7 <sarahoneill132@hotmail.com>
@@ -28,6 +26,14 @@
   markingLimits: MobHarpyMarkingLimits
   dollPrototype: MobHarpyDummy
   skinColoration: HumanToned
+  # begin Goobstation: port EE height/width sliders
+  minHeight: 0.75
+  defaultHeight: 0.80
+  maxHeight: 1.0
+  minWidth: 0.80
+  defaultWidth: 0.80
+  maxWidth: 1.0
+  # end Goobstation: port EE height/width sliders
 
 - type: speciesBaseSprites
   id: MobHarpySprites
@@ -36,8 +42,6 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
-    Underwear: MobHumanoidAnyMarking
-    Undershirt: MobHumanoidAnyMarking
     Chest: MobHarpyChest
     Groin: MobHarpyGroin
     HeadTop: MobHumanoidAnyMarking
@@ -53,7 +57,6 @@
     LFoot: MobHarpyLFoot
     RFoot: MobHarpyRFoot
 
-
 - type: markingPoints
   id: MobHarpyMarkingLimits
   points:
@@ -61,6 +64,9 @@
       points: 1
       required: false
     FacialHair:
+      points: 1
+      required: false
+    Snout:
       points: 1
       required: false
     Tail:
@@ -71,6 +77,9 @@
       points: 1
       required: true
       defaultMarkings: [ HarpyEarsDefault ]
+    HeadSide:
+      points: 8
+      required: false
     Chest:
       points: 1
       required: true
@@ -81,13 +90,31 @@
     Undershirt:
       points: 1
       required: false
-    Legs:
+    RightLeg:
       points: 2
       required: false
-    Arms:
+    RightFoot:
+      points: 2
+      required: false
+    LeftLeg:
+      points: 2
+      required: false
+    LeftFoot:
+      points: 2
+      required: false
+    RightArm:
       points: 1
       required: false
       defaultMarkings: [ HarpyWingDefaultHuescale ]
+    RightHand:
+      points: 3
+      required: false
+    LeftArm:
+      points: 2
+      required: false
+    LeftHand:
+      points: 3
+      required: false
 
 - type: humanoidBaseSprite
   id: MobHarpyHead
