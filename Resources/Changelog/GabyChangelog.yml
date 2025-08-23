@@ -849,3 +849,17 @@ Entries:
         quantidade. Caso note alguém erro de tradução ou bug, reporte!
   id: 96
   time: '2025-08-23T02:59:19.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Add
+      message: >-
+        Adicionada as últimas atualizações do Goob até 22/08. Cheque o changelog
+        do Goob (aba aqui em cima ^^) para ver o que mudou.
+    - type: Tweak
+      message: >-
+        Agora, as linguagens são corretamente mostradas  no chat (fonte, cor e
+        tamanho).
+    - type: Add
+      message: Novo guia de produção de plástico adicionado, pelo merge, e traduzido.
+  id: 97
+  time: '2025-08-23T14:28:21.0000000+00:00'
