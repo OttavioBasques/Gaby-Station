@@ -841,3 +841,11 @@ Entries:
         perdida do que fazer, tente examinar o artefato.
   id: 95
   time: '2025-08-23T02:35:35.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Tweak
+      message: >-
+        Muitas traduções foram alteradas, nem tudo foi testado devido a
+        quantidade. Caso note alguém erro de tradução ou bug, reporte!
+  id: 96
+  time: '2025-08-23T02:59:19.0000000+00:00'
