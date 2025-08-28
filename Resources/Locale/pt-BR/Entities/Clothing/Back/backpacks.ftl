@@ -53,7 +53,7 @@ ent-ClothingBackpackERTClown = mochila de palhaço da ERT
     .desc = Uma mochila muito espaçosa e buzinástica, pertencente a um membro da elite de palhaços, um palhaço da unidade da ERT!
 
 ent-ClothingBackpackHolding = mochila interdimensional
-    .desc = Uma mochila que contém um buraco de minhoca ao bluespace.
+    .desc = Uma mochila que contém um buraco de minhoca a dimensão azul.
 
 ent-ClothingBackpackIan = mochila do Ian
     .desc = As vezes ele usa ela.
