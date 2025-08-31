@@ -871,3 +871,9 @@ Entries:
         como o cotonete funciona.
   id: 98
   time: '2025-08-23T16:29:50.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Add
+      message: Adiciona as últimas mudanças do Goob 30/08 (confira a aba do Goob).
+  id: 99
+  time: '2025-08-31T02:37:25.0000000+00:00'
