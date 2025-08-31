@@ -1,5 +1,5 @@
 traitor-arcterrorist-intro = Você é um terrorista da ARC.
-traitor-arcterrorist-goal = As criaturas deste mundo precisam ser libertadas do punho de ferro da Nanotrasen, e você é a única esperança delas!
+traitor-arcterrorist-goal = As criaturas deste mundo precisam ser libertadas do punho de ferro da NanoTrasen, e você é a única esperança delas!
 traitor-arcterrorist-allies = Você pode cooperar com outros agentes do Sindicato se apoiarem nossa causa. Talvez consiga convencer os agentes da Frente de Libertação das Abelhas a cooperarem, só desta vez?
 traitor-arcterrorist-uplink = O Sindicato generosamente cedeu um de seus uplinks de PDA para sua tarefa.
 traitor-arcterrorist-roundend = [color=green]um ativista do Consórcio pelos Direitos dos Animais[/color]
@@ -59,7 +59,7 @@ traitor-wafflecorporation-uplink = Você recebeu um uplink do Sindicato localiza
 traitor-wafflecorporation-roundend = [color=orange]um funcionário da Waffle Corporation[/color]
 
 traitor-wafflecorporationterrorist-intro = Você é um terrorista da Corporação Waffle .
-traitor-wafflecorporationterrorist-goal = Nossos investidores precisam de uma demonstração de nosso compromisso em destruir a Nanotrasen. Vamos dar a eles algo barulhento!
+traitor-wafflecorporationterrorist-goal = Nossos investidores precisam de uma demonstração de nosso compromisso em destruir a NanoTrasen. Vamos dar a eles algo barulhento!
 traitor-wafflecorporationterrorist-allies = A maioria dos outros agentes do Sindicato não deve ser confiada, exceto os membros dos Saqueadores de Gorlex.
 traitor-wafflecorporationterrorist-uplink = Você recebeu um uplink do Sindicato localizado no seu PDA para cumprir sua missão.
 traitor-wafflecorporationterrorist-roundend = [color=red]um terrorista da Waffle Corporation[/color]
