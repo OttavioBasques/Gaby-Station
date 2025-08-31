@@ -19,7 +19,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   ## Estatísticas de dano
 
-  Gingerbreads tomam [color=#1e90ff]3x menos dano de Fogo[/color], mas [color=#ffa500]1.5x mais dano Contundente[/color]. Também tomam [color=#ffa500]muito dano de Calor ao serem diretamente expostos a água[/color].
-  Eles [color=#1e90ff]não tomam dano de Asfixia[/color], [color=#1e90ff]Perda de sangue[/color] ou [color=#1e90ff]Frio[/color] (porém ainda respiram, ficam desconfortáveis sem oxigênio/açúcar e ficam lentos pelo frio).
+  - Tomam [color=#1e90ff]3x menos dano de Fogo[/color], mas [color=#ffa500]1.5x mais dano Contundente[/color].
+  - Também tomam [color=#ffa500]muito dano de Calor ao serem diretamente expostos a água[/color].
+  - [color=#1e90ff]Não tomam dano de Asfixia[/color], [color=#1e90ff]Perda de sangue[/color] ou [color=#1e90ff]Frio[/color] (porém ainda respiram, ficam desconfortáveis sem oxigênio/açúcar e ficam lentos pelo frio).
 
 </Document>
