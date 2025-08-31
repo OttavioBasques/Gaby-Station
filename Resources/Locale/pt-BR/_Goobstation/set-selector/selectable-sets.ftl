@@ -10,29 +10,29 @@ selectable-set-thief-breacher-name = Kit Demolidor
 selectable-set-thief-breacher-description =
     Que som é esse? Um C4 batendo na porta deles.
     Nenhum obstáculo pode pará-lo!
-    Inclui: Duas C4, uma multitool, sinalizador remoto, jaws of life,
+    Inclui: Duas cargas C4, uma multitool, sinalizador remoto, jaws of life,
     maçarico avançado, óculos de engenharia e luvas isolantes.
 
 selectable-set-thief-chameleon-name = Kit Camaleão
 selectable-set-thief-chameleon-description =
     Você é todos e ninguém; um mestre do disfarce.
     Inclui: Um conjunto completo de roupas camaleão,
-    um projetor camaleão e um Identificador de Agente.
+    um projetor camaleão e um identificador de Agente.
     Disfarce-se de qualquer pessoa ou coisa.
 
 selectable-set-thief-syndie-name = Kit do Sindicato
 selectable-set-thief-syndie-description =
     Bugigangas de um passado renegado, ou roubadas de um agente descuidado?
     Você fez algumas conexões. Uísque, eco...
-    Inclui: Um Emag, Access Breaker, cigarros Interdyne, uma palavra-código do Sindicato,
-    um Bloqueador de Rádio, um isqueiro e alguns estranhos cristais vermelhos.
+    Inclui: Um EMAG, Access Breaker, cigarros Interdyne, uma palavra-código do Sindicato,
+    um bloqueador de rádio, um isqueiro e alguns estranhos cristais vermelhos.
 
 selectable-set-thief-sleeper-name = Kit Sonífero
 selectable-set-thief-sleeper-description =
     Até fecharmos os olhos para sempre, use suas prescrições ilegais
     para manter os outros adormecidos.
     Inclui: Tanque de óxido nitroso sonolento, dois frascos de nocturina
-    e uma hipopen.
+    e uma hypopen.
 
 selectable-set-thief-communicator-name = Kit Comunicador
 selectable-set-thief-communicator-description =
@@ -54,14 +54,14 @@ selectable-set-syndicate-spy-name = Pacote Espião
 selectable-set-syndicate-spy-description =
     Complete seus objetivos silenciosamente com esta compilação de itens furtivos.
     Contém: Luvas de ladrão camaleão, kit camaleão, máscara de voz,
-    identificador de agente, uma hipopen com frasco de nocturina, câmera espiã,
+    identificador de agente, uma hypopen com frasco de nocturina, câmera espiã,
     caixa furtiva, jaws of life do sindicato e uma chave de criptografia do sindicato.
 
 selectable-set-syndicate-hitman-name = Pacote Hitman
 selectable-set-syndicate-hitman-description =
     Encontre e elimine seus alvos silenciosa e eficazmente com este pacote.
     Contém: Pistola Cobra com 3 carregadores extras, manual de CQC,
-    colete invisível, pacote de ervas Interdyne,
+    colete ocultável, pacote de ervas Interdyne,
     kit médico de combate, um visual estiloso e uma chave de criptografia do sindicato.
 
 selectable-set-syndicate-implants-name = Pacote Ciberpsicose
@@ -112,8 +112,8 @@ selectable-set-syndicate-carp-description =
 selectable-set-syndicate-sus-name = Pacote Suspeito
 selectable-set-syndicate-sus-description =
     Quando o traidor é suspeito. O traidor é você, é claro.
-    Contém: Um macacão de contorcionista avançado, faca da traição, mini
-    besta de energia, traje furtivo e uma chave de criptografia do sindicato.
+    Contém: Um macacão de contorcionista avançado, faca da traição,
+    mini-besta de energia, traje furtivo e uma chave de criptografia do sindicato.
 
 selectable-set-syndicate-builder-name = Pacote Construtor
 selectable-set-syndicate-builder-description =
@@ -123,30 +123,30 @@ selectable-set-syndicate-builder-description =
 
 # Blueshield
 
-selectable-set-blueshield-shield-name = conjunto blueshield
+selectable-set-blueshield-shield-name = Conjunto Blueshield
 selectable-set-blueshield-shield-description =
     O icônico homônimo destes soldados.
     Inclui: O grande escudo e o bastão de choque DT-4 Atrocity.
 
-selectable-set-blueshield-revolver-name = conjunto revólver
+selectable-set-blueshield-revolver-name = Conjunto Revólver
 selectable-set-blueshield-revolver-description =
     Ficar sem munição é a pior coisa que pode acontecer em um tiroteio.
     Inclui: O revólver de energia EG-4, capaz de disparar raios usando
     carregadores recarregáveis, letais e não letais, e um coldre de ombro.
 
-selectable-set-blueshield-dragon-name = conjunto manual de kung fu
+selectable-set-blueshield-dragon-name = Conjunto Manual de Kung Fu
 selectable-set-blueshield-dragon-description =
     Às vezes é preciso sujar as mãos.
     Inclui: Um livro capaz de ensinar ao usuário
     a arte marcial avançada do kung fu.
 
-selectable-set-blueshield-chester-name = conjunto chester
+selectable-set-blueshield-chester-name = Conjunto Chester
 selectable-set-blueshield-chester-description =
     Pronto para caçar?
     Inclui: Espingarda calibre 8, a Chester. Munição extra,
     munição alternativa e carregadores sobressalentes.
 
-selectable-set-blueshield-syringe-name = conjunto médico
+selectable-set-blueshield-syringe-name = Conjunto Médico
 selectable-set-blueshield-syringe-description =
     Perfeito para curar aliados ou envenenar inimigos em uma picadinha.
     Inclui: Um colete resistente a explosivos, um injetor de combate
@@ -154,13 +154,13 @@ selectable-set-blueshield-syringe-description =
 
 # Trajes Blueshield
 
-selectable-set-blueshield-hardsuit-light-name = traje espacial blindado
+selectable-set-blueshield-hardsuit-light-name = hardsuit blindado
 selectable-set-blueshield-hardsuit-light-description =
-    Um traje espacial blindado, permitindo mais velocidade ao custo de proteção.
+    Um hardsuit blindado, permitindo mais velocidade ao custo de proteção.
 
-selectable-set-blueshield-modsuit-name = traje reforçado blueshield
+selectable-set-blueshield-modsuit-name = hardsuit do blueshield
 selectable-set-blueshield-modsuit-description =
-    Um traje reforçado personalizado, permitindo mais customização, mas exigindo energia.
+    Um hardsuit personalizado, permitindo mais customização, mas exigindo energia.
 
 # ERT
 
