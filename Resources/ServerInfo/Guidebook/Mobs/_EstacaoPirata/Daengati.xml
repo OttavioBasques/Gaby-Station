@@ -4,10 +4,10 @@
   # Daengati
 
   <Box>
-      <GuideEntityEmbed Entity="MobDaengatiDummy" Caption=""/>
+      <GuideEntityEmbed Entity="MobDaengati" Caption=""/>
   </Box>
 
-  Daengati são humanoides que lembram descrições de demônios com caudas.
+  Daengati são humanoides que lembram descrições de demônios com caudas [italic](Tieflings)[/italic].
 
   Suas características são:
   - Suas garras causam dano [color=#ec3a3a]Cortante[/color] e de [color=#ec3a3a]Calor[/color].
