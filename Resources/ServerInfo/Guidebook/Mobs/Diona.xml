@@ -25,12 +25,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   mas [color=#ffa500]20% mais dano de Choque[/color], além de [color=#ffa500]50% mais dano de Calor, e podem pegar
   fogo ao tomar esse dano de [bold]qualquer[/bold] fonte.[/color]
 
-  ## Faça Como Uma Arvore e Cresça
+  ## Faça Como Uma Árvore e Cresça
   <Box>
     <GuideEntityEmbed Entity="FloraTree" Caption=""/>
   </Box>
-  Ficar esposto a muito Robust Harvest causará um Diona a crescer fora de controle, o transformando em uma árvore imóvel (deixando todos os seus itens no chão).
-  Cortar a árvore vai "restaurar" o Diona para sua forma móvel.
+   Ficar exposto a muito Robust Harvest fará com que um Diona cresça descontroladamente, transformando-o em uma árvore imóvel (deixando todos os seus itens no chão).
++  Cortar a árvore "restaura" o Diona para sua forma móvel.
 
   ## Ninfas de Diona
   <Box>
@@ -38,11 +38,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
     <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
   </Box>
-  Depois de sua morte, o Diona pode voluntariamente destruir o seu próprio corpo, soltando três ninfas como "orgãos internos", com o jogador controlando a Ninfa que seria o cérebro.
+  Depois de sua morte, o Diona pode voluntariamente destruir o próprio corpo, soltando três ninfas como "orgãos internos", com o jogador controlando a Ninfa que seria o cérebro.
 
   Ela pode falar, mas não tem mãos e nem inventário, e não pode fazer muitas coisas.
 
   Depois de 10 minutos, uma Ninfa pode reformar o seu próprio corpo em um Diona completo. Esse novo corpo será aleatório e com nome aleatório,
-  e terá quase nenhuma evidencia além de sua palavra sobre quem era antes.
+  e terá quase nenhuma evidência além de sua palavra sobre quem era antes.
 
 </Document>

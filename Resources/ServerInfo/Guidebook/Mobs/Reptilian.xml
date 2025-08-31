@@ -7,13 +7,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Repitilianos
+  # Reptilianos
 
   <Box>
     <GuideEntityEmbed Entity="MobReptilian" Caption=""/>
   </Box>
 
-  Podem comer carte crua e beber sangue sem nenhum efeito negativo.
+  Podem comer carne crua e beber sangue sem nenhum efeito negativo.
   Eles preferem uma temperatura um pouco mais alta do que humanos.
   Eles podem puxar objetos com suas caudas, mantendo suas mãos livres.
 

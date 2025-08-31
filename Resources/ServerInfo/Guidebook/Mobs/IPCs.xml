@@ -33,7 +33,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Carregadores de Borgs: IPCs podem usar carregadores de borgs para se recarregar. Sempre priorize aqueles fora do setor de Ciência para evitar dor de cabeça e confusão.
 
-  Power Cell: IPCs têm uma power cell interna que serve como sua bateria. Eles podem trocá-la abrindo sua hatch e a substituindo manualmente.
+  Power Cell: IPCs têm uma power cell (célula de energia) interna que serve como sua bateria. Eles podem trocá-la abrindo sua hatch e a substituindo manualmente.
 
   ## Rádio Integrado
   <Box>
@@ -50,7 +50,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Box>
   <Box HorizontalAlignment="Stretch">
     <GuideEntityEmbed Entity="CableApcStack" Caption="Cabos (qualquer tipo)"/>
-    Cabos podem usado para reparar [color=yellow]dano de Queimado[/color].
+    Cabos podem ser usados para reparar [color=yellow]dano de Queimadura[/color].
   </Box>
   <Box HorizontalAlignment="Stretch">
     <GuideEntityEmbed Entity="SheetGlass" Caption="Glass Sheets (qualquer tipo)"/>
