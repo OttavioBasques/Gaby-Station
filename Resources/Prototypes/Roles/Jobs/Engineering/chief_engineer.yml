@@ -136,13 +136,13 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobAtmosphericTechnician
-      time: 9000 #2.5 hrs
+      time: 36000 #10 hrs
     - !type:RoleTimeRequirement
       role: JobStationEngineer
       time: 18000 #5 hrs
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 36000 #10 hrs
+      time: 54000 #15 hrs
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

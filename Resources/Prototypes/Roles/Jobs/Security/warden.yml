@@ -140,7 +140,7 @@
       time: 18000 #5 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 #10 hrs
+      time: 54000 #15 hrs
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

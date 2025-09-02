@@ -139,21 +139,18 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 14400 # 4 hours
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 14400 # 4 hours
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 14400 # 4 hours
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 14400 # 4 hours
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 14400 # 4 hours
+    - !type:RoleTimeRequirement
+      role: JobChiefEngineer
+      time: 18000 #5 hrs
+    - !type:RoleTimeRequirement
+      role: JobChiefMedicalOfficer
+      time: 18000 #5 hrs
+    - !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 54000 #15 hrs
+    - !type:RoleTimeRequirement
+      role: JobResearchDirector
+      time: 18000 #5 hrs
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:
