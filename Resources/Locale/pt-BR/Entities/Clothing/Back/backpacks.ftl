@@ -20,7 +20,7 @@ ent-ClothingBackpackMime = mochila do mímico
     .desc = Uma mochila furtiva feita para pessoas que "não abrem a boca". Perfeita para guardar... Uhh... B-Baguette?
 
 ent-ClothingBackpackChemistry = mochila da química
-    .desc = Uma mochila feita para armazenar veneno... M-M-Medicamentos!
+    .desc = Uma mochila feita para armazenar venen-... M-M-Medicamentos!
 
 ent-ClothingBackpackHydroponics = mochila da botânica
     .desc = Uma mochila 100% vegana!
