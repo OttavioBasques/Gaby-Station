@@ -188,8 +188,8 @@ public sealed partial class GunSystem : SharedGunSystem
         xform.LocalRotation = angle;
         // Não altere o sprite, use o padrão do ImpactEffect
         spriteComp["unshaded"].Visible = true;
-        NetEntity netEnt = GetNetEntity(ent);
-        _displacement.TryAddDisplacement(_displacementEffect.Displacement, (Entity<SpriteComponent>) (EntityManager.GetEntity(netEnt)!), 0, "unshaded", out _);
+
+        _displacement.TryAddDisplacement(_displacementEffect.Displacement, (ent, spriteComp), 0, "unshaded", out _);
     }
     private void RenderBullet(NetCoordinates coordinates, Angle angle, SpriteSpecifier sprite, float distance)
     {
