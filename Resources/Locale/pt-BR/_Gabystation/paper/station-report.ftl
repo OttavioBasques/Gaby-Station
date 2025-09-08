@@ -1,0 +1,20 @@
+station-report-text =
+	[color=#1b67a5]░░██░░ [head=2]Documento Oficial[/head]
+	▀████▀ [head=3]Assunto: Relatório Setorial – Status Operacional da Estação[/head]
+	▄█▀▀█▄ [head=3]De: Representante Nanotrasen[/head]
+	[/color]──────────────────────────────────────────
+
+    • [color=#9fed58][bold]Relatório Geral[/bold][/color]
+    >[mono][/mono]
+    • [color=#ff5c5c][bold]Relatório do Deparamento de Segurança[/bold][/color]
+    >[mono][/mono]
+    • [color=#d28150][bold]Relatório do Deparamento de Logistica[/bold][/color]
+    >[mono][/mono]
+    • [color=#f2e052][bold]Relatório do Deparamento de Engenharia[/bold][/color]
+    >[mono][/mono]
+    • [color=#5b97bc][bold]Relatório do Deparamento de Médico[/bold][/color]
+    >[mono][/mono]
+    • [color=#c96dbf][bold]Relatório do Deparamento de Pesquisa/bold][/color]
+    >[mono][/mono]
+    Assinado por, [color=Green]Nome do redator:[/color]
+    -#[italic]Por favor não carimbe ou assine este documento. Insira seu nome no campo disponivel.[/italic]
