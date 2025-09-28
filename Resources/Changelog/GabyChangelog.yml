@@ -1095,3 +1095,9 @@ Entries:
       message: Alterado buscas de máquinas para não considerar acentuação
   id: 122
   time: '2025-09-27T05:45:27.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Add
+      message: Adiciona as mudanças do Goob 27/09.
+  id: 123
+  time: '2025-09-28T02:35:43.0000000+00:00'
