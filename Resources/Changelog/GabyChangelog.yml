@@ -1107,3 +1107,23 @@ Entries:
       message: Added NUNO cards
   id: 124
   time: '2025-09-28T02:39:42.0000000+00:00'
+- author: AgentePanela
+  changes:
+    - type: Add
+      message: >-
+        Caixas eletronicos - Flatpack roundstart para HoS, bartender e QM, alem
+        da trade station.
+    - type: Add
+      message: >-
+        Todos os funcionarios da nanotrasen agora tem uma conta bancaria no
+        NanoBank, aproveite!
+    - type: Add
+      message: Nano Pix (ou Nano Bank) adicionado ao PDA de todos os tripulantes.
+    - type: Add
+      message: >-
+        A Central de Comando finalmente pagara seus funcionarios pelos seus
+        esforços!
+    - type: Remove
+      message: Sua liberdade financeira.
+  id: 125
+  time: '2025-09-30T04:06:48.0000000+00:00'
