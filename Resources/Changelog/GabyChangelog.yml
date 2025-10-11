@@ -1192,3 +1192,9 @@ Entries:
       message: IPCs agora deixam impressões digitais.
   id: 134
   time: '2025-10-11T22:12:13.0000000+00:00'
+- author: Lucasalemao10
+  changes:
+    - type: Remove
+      message: Tram saiu da votação de mapas
+  id: 135
+  time: '2025-10-11T22:55:37.0000000+00:00'
