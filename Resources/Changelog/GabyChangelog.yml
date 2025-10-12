@@ -1198,3 +1198,9 @@ Entries:
       message: Tram saiu da votação de mapas
   id: 135
   time: '2025-10-11T22:55:37.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Add
+      message: Adicionadas as mudanças do Goob até 12/10 (confira a aba do goob)!
+  id: 136
+  time: '2025-10-12T13:40:20.0000000+00:00'
