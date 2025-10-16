@@ -1,6 +1,5 @@
 uplink-autosurgeon-smartlink-name = Autocirurgião de Smartlink 
-uplink-autosurgeon-smartlink-desc = Modifica os braços do usuário para incluir o cibernético smartlink, melhorando a mira com armas de longo alcance. Requer ajustes muito precisos para um
-humano fornecer, vem com um autocirurgião de uso único para instalação.
+uplink-autosurgeon-smartlink-desc = Modifica os braços do usuário para incluir o cibernético smartlink, melhorando a mira com armas de longo alcance. Requer ajustes muito precisos para um humano fornecer, vem com um autocirurgião de uso único para instalação.
 
 uplink-autosurgeon-recoil-absorbing-name = Autocirurgião de braço absorvedor de recuo 
 uplink-autosurgeon-recoil-absorbing-desc = Modifica os braços do usuário para incluir cibernéticos que absorvem recuo, reduzindo drasticamente o recuo ao disparar armas de longo alcance. Requer ajustes muito precisos para um humano fornecer, vem com um autocirurgião de uso único para instalação.
