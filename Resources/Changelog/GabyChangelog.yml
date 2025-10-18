@@ -1224,3 +1224,29 @@ Entries:
         cirurgia.
   id: 138
   time: '2025-10-18T04:33:08.0000000+00:00'
+- author: Dreykor
+  changes:
+    - type: Tweak
+      message: >-
+        Space Law e POP foram alterados, tendo entradas para todos os
+        departamentos, não esqueçam de ler elas!
+    - type: Add
+      message: >-
+        A equipe de segurança possui um Código de Conduta que deve ser seguida,
+        e os Procedimentos Operacionais Padrão para a segurança foram alterados
+        para permitir um convívio mutuo melhor com os tripulantes.
+    - type: Add
+      message: >-
+        Multas e Fianças agora estão listados na POP como formas reais para
+        substituir parcialmente ou completamente penas pelos crimes que
+        tripulantes cometem, os ricos prevalecem.
+    - type: Add
+      message: >-
+        Multas são aplicadas em violações da POP, a equipe de segurança está
+        encarregada de multar violações dos tripulantes,  a equipe de
+        administração cobrará conhecimento de POP aos Heads de seus respectivos
+        departamentos, então não esqueça de ler elas, NTRs podem multar
+        violações de POP dos comandantes caso recebam permissão expressa da
+        CentCom.
+  id: 139
+  time: '2025-10-18T14:12:22.0000000+00:00'
