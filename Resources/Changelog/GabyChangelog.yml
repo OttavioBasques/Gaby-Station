@@ -1256,3 +1256,11 @@ Entries:
       message: ADICIONA GLACIER!!!!
   id: 140
   time: '2025-10-19T11:15:14.0000000+00:00'
+- author: Lucasalemao10
+  changes:
+    - type: Tweak
+      message: Mudanças pela SM, TEG e biblioteca!
+    - type: Fix
+      message: Arruma Glacier virando o inferno(eu espero)
+  id: 141
+  time: '2025-10-21T23:05:39.0000000+00:00'
