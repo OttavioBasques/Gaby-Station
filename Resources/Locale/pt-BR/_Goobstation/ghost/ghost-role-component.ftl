@@ -39,7 +39,6 @@ ghost-role-information-ancient-xeno-description = Uma criatura considerada extin
 ghost-role-information-ancient-rogue-king-description = O rei solitário, com apenas vingança em seus olhos. Não mostre misericórdia!
 
 ghost-role-information-ancient-rogue-king-rules = Você não se curva a ninguém. Mate qualquer coisa que fique em seu caminho.
-ghost-role-information-ancient-rogue-king-name-token = Rei Xenomorfo Renegado Ancestral (Token)
 
 # Blueshild Deputy
 
@@ -49,15 +48,15 @@ ghost-role-information-bsd-rules = Siga as ordens dadas pelo [color=yellow][bold
 
 # interns
 
-ghost-role-intern-name = Estagiário da CentComm
-ghost-role-nerd-intern-name = Estagiário Nerd da CentComm
-ghost-role-lead-intern-name = Estagiário Líder da CentComm
-ghost-role-intern-desc = Você é um estagiário da CentComm, mal pago, com fome, cheio de dívidas estudantis para pagar, mas não tem outra opção então é melhor obedecer!
-ghost-role-intern-rules = Siga as ordens dadas pelo [color=yellow][bold]Representante da NanoTrasen[/bold][/color] & CentComm, proteja o comando, ouça o Estagiário Líder.
-ghost-role-lead-intern-rules = Siga as ordens dadas pelo [color=yellow][bold]Representante da NanoTrasen[/bold][/color] & CentComm, proteja o comando, dê ordens aos outros estagiários.
+ghost-role-intern-name = Estagiário da Central de Comando
+ghost-role-nerd-intern-name = Estagiário Nerd da Central de Comando
+ghost-role-lead-intern-name = Estagiário Líder da Central de Comando
+ghost-role-intern-desc = Você é um estagiário da Central de Comando, mal pago, com fome, cheio de dívidas estudantis para pagar, mas não tem outra opção então é melhor obedecer!
+ghost-role-intern-rules = Siga as ordens dadas pelo [color=yellow][bold]Representante da NanoTrasen[/bold][/color] & Central de Comando, proteja o comando, ouça o Estagiário Líder.
+ghost-role-lead-intern-rules = Siga as ordens dadas pelo [color=yellow][bold]Representante da NanoTrasen[/bold][/color] & Central de Comando, proteja o comando, dê ordens aos outros estagiários.
 
 # cargo bingle
-ghost-role-cargo-bingle-name = Cargo bingle
+ghost-role-cargo-bingle-name = Bingle Cargueiro
 ghost-role-cargo-bingle-desc = Sirva o Representante da NanoTrasen e seus interesses, não machuque tripulantes e ajuda a Cargo da estação.
 
 # shuttle roles
