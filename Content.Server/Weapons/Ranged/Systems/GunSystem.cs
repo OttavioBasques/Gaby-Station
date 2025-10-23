@@ -178,7 +178,6 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;  // 🌟Starlight🌟
     [Dependency] private readonly DecalSystem _decals = default!;  // 🌟Starlight🌟
-    [Dependency] private readonly FlammableSystem _flammableSystem = default!; // 🌟Starlight🌟
     [Dependency] private readonly AtmosphereSystem _atmosphere = default!; // 🌟Starlight🌟
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
@@ -197,9 +196,10 @@ public sealed partial class GunSystem : SharedGunSystem
         base.Initialize();
         SubscribeLocalEvent<BallisticAmmoProviderComponent, PriceCalculationEvent>(OnBallisticPrice);
         _cfg.OnValueChanged(GoobCVars.CrawlHitzoneSize, value => _crawlHitzoneSize = value, true); // Goobstation
-        
+
         CacheDecals();
     }
+
     private void CacheDecals() // 🌟Starlight🌟
     {
         _bloodDecals = _proto.EnumeratePrototypes<DecalPrototype>().Where(x => x.Tags.Contains("BloodSplatter")).Select(x => x.ID).ToArray();
@@ -452,7 +452,7 @@ public sealed partial class GunSystem : SharedGunSystem
                         if (hitscan.Ignite)
                         {
                             if (TryComp<FlammableComponent>(lastHit.Value, out var flammable))
-                                _flammableSystem.SetFireStacks(lastHit.Value, 1, flammable, true);
+                                _flammable.SetFireStacks(lastHit.Value, 1, flammable, true);
 
                             if (Transform(lastHit.Value) is TransformComponent xform && xform.GridUid is { } grid)
                             {
@@ -630,7 +630,7 @@ public sealed partial class GunSystem : SharedGunSystem
                 if (hitscan.Ignite)
                 {
                     if (TryComp<FlammableComponent>(lastHit.Value, out var flammable))
-                        _flammableSystem.SetFireStacks(lastHit.Value, 1, flammable, true);
+                        _flammable.SetFireStacks(lastHit.Value, 1, flammable, true);
 
                     if (Transform(lastHit.Value) is TransformComponent xform && xform.GridUid is { } gridUid)
                     {
