@@ -1282,3 +1282,11 @@ Entries:
       message: Holo barrier, placas e decalques traduzidos.
   id: 144
   time: '2025-10-25T14:00:49.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Add
+      message: >-
+        Adicionadas as últimas mudanças do Goob até 24/10 (confira a aba do
+        goob).
+  id: 145
+  time: '2025-10-25T14:06:46.0000000+00:00'
