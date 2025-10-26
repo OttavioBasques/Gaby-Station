@@ -1304,3 +1304,9 @@ Entries:
       message: Agora as roupas sujam.
   id: 147
   time: '2025-10-25T14:40:34.0000000+00:00'
+- author: SrKolobanov
+  changes:
+    - type: Tweak
+      message: Agora a maioria dos cargos tem acesso aos calçados civis.
+  id: 148
+  time: '2025-10-26T23:06:17.0000000+00:00'
