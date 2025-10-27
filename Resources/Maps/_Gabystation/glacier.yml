@@ -14733,14 +14733,6 @@ entities:
     - type: Transform
       pos: -49.48498,7.642147
       parent: 2
-- proto: ActionToggleLight
-  entities:
-  - uid: 13915
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 12816
 - proto: AdvMopItem
   entities:
   - uid: 20834
@@ -26604,11 +26596,6 @@ entities:
     - type: Transform
       pos: 43.42633,-4.2320137
       parent: 2
-    - type: UserInterface
-      actors:
-        enum.StorageUiKey.Key:
-        - invalid
-    - type: ActiveUserInterface
   - uid: 2344
     components:
     - type: Transform
@@ -92753,24 +92740,6 @@ entities:
     - type: Transform
       pos: -6.5724893,34.569923
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 13915
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 13915
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: True
-    - type: ActionsContainer
 - proto: LandMineExplosive
   entities:
   - uid: 12817
