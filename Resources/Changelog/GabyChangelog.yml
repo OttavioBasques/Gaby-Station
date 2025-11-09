@@ -1350,3 +1350,11 @@ Entries:
       message: Armaduras da sec buffadas.
   id: 154
   time: '2025-11-09T13:52:30.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Add
+      message: >-
+        Adicionada as últimas mudanças do Goob 09/11 (dê uma olhada na aba do
+        Goob).
+  id: 155
+  time: '2025-11-09T13:55:02.0000000+00:00'
