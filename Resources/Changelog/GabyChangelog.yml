@@ -1376,3 +1376,9 @@ Entries:
       message: Leves mudanças na virologia da Glacier
   id: 157
   time: '2025-11-10T11:47:12.0000000+00:00'
+- author: VMSolidus, PuroSlavKing, Will-Oliver-Br
+  changes:
+    - type: Add
+      message: Adiciona efeitos visuais quando há diferença de pressão na atmosfera.
+  id: 158
+  time: '2025-11-15T15:10:28.0000000+00:00'
