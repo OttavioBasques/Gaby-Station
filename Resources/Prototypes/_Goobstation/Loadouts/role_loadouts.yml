@@ -262,7 +262,7 @@
 - type: roleLoadout
   id: JobCommandMaid
   groups:
-  - CommonBackpack
+  - CivilianBackpack
   - Survival
   - GroupSpeciesBreathTool
 
@@ -270,6 +270,6 @@
   id: JobPartyMaker
   groups:
   - GroupTankHarness
-  - CommonBackpack
+  - CivilianBackpack
   - Survival
   - GroupSpeciesBreathTool
