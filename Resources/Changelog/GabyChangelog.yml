@@ -1504,3 +1504,9 @@ Entries:
       message: O intellicard foi corrigido.
   id: 172
   time: '2025-11-23T13:21:37.0000000+00:00'
+- author: Day-OS
+  changes:
+    - type: Fix
+      message: conserta bug de cabelos com displacement
+  id: 173
+  time: '2025-11-23T19:48:01.0000000+00:00'
