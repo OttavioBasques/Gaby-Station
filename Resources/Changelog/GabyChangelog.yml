@@ -1516,3 +1516,11 @@ Entries:
       message: Agora você pode oferecer itens.
   id: 174
   time: '2025-11-23T20:44:50.0000000+00:00'
+- author: Day-OS
+  changes:
+    - type: Add
+      message: Espécie Pinguinador
+    - type: Add
+      message: Bolas de neve
+  id: 175
+  time: '2025-11-23T20:49:33.0000000+00:00'
