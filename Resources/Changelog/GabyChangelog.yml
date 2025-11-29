@@ -1562,3 +1562,11 @@ Entries:
       message: RCDs agora podem construir portas por cima de firelocks.
   id: 181
   time: '2025-11-29T03:35:11.0000000+00:00'
+- author: Kaduh45
+  changes:
+    - type: Tweak
+      message: >-
+        Reorganização de algumas POPs, melhoria nas POP dos Especialistas em
+        Salvamento, POP de Blueshield adicionada e mais!
+  id: 182
+  time: '2025-11-29T03:40:11.0000000+00:00'
