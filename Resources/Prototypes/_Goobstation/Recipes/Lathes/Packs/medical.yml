@@ -36,6 +36,7 @@
   - MedicalPatchRapid
   - MedicalPatchTherapeutic
   - MedicalPatchLarge
+  - MedicalCigPack
 
 - type: latheRecipePack
   id: SurgeryStaticGoob
