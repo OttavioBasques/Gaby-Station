@@ -1578,3 +1578,15 @@ Entries:
         anti-rad. 
   id: 183
   time: '2025-12-09T14:53:38.0000000+00:00'
+- author: joshepvodka
+  changes:
+    - type: Tweak
+      message: >-
+        Todos materiais inseríveis no silo podem ser acessados por qualquer
+        fabricador conectado.
+    - type: Tweak
+      message: >-
+        Adiciona repositores de lâmpadas nos fabricadores que já podiam fazer
+        lâmpadas.
+  id: 184
+  time: '2025-12-09T16:21:56.0000000+00:00'
