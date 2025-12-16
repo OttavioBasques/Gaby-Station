@@ -1608,3 +1608,11 @@ Entries:
       message: A máquina de venda de gás bluespace agora é pesquisável e craftável.
   id: 187
   time: '2025-12-16T20:24:32.0000000+00:00'
+- author: joshepvodka
+  changes:
+    - type: Tweak
+      message: >-
+        Aumenta o tamanho do cinto de ferramentas comum e do engenheiro chefe
+        por 1 item médio ou 2 pequenos.
+  id: 188
+  time: '2025-12-16T21:00:02.0000000+00:00'
