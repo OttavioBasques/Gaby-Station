@@ -49,9 +49,9 @@
       species:
       - Felinid
   guides:
-  - BlueshieldOfficer SOP
+  # - BlueshieldOfficer SOP
   - Command
-  - Succession
+  # - Succession
   goobcoins: 45
   salary: 50 # Gaby content
   weight: 20
