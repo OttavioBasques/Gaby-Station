@@ -1,17 +1,15 @@
 using System.Diagnostics.CodeAnalysis;
-using System.Numerics;
 using Content.Shared.StatusIcon;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.RichText;
-using Robust.Shared.IoC;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-namespace Content.Client.UserInterface.RichText;
+namespace Content.Goobstation.UIKit.UserInterface.RichText;
 
-public sealed class IconTag : IMarkupTag
+public sealed class IconTag : IMarkupTagHandler
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IEntitySystemManager _entitySystem = default!;

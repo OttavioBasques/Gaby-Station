@@ -31,7 +31,6 @@
 // SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Kyoth25f <41803390+Kyoth25f@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Kyoth25f <kyoth25f@gmail.com>
 // SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
@@ -51,12 +50,9 @@ using Content.Server.Radio.Components;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared._EinsteinEngines.Language;
-using Content.Shared._EinsteinEngines.Language.Systems;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
 using Content.Shared.Speech;
-using Content.Shared.Silicons.Borgs.Components;
-using Content.Shared.Silicons.StationAi;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -64,18 +60,20 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
-using Content.Shared.Access.Systems;
-using Content.Shared.Access.Components;
-using Content.Shared.PDA;
+using Content.Shared.Access.Systems; // Goobstation
+// Goobstation
+using Content.Shared.Chat.RadioIconsEvents; // Goobstation
+// Goobstation
 using Content.Shared.Whitelist;
-using Content.Shared.StatusIcon;
+
+// Goobstation
 
 namespace Content.Server.Radio.EntitySystems;
 
 /// <summary>
 ///     This system handles intrinsic radios and the general process of converting radio messages into chat messages.
 /// </summary>
-public sealed class RadioSystem : EntitySystem
+public sealed partial class RadioSystem : EntitySystem
 {
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly IReplayRecordingManager _replay = default!;
@@ -83,7 +81,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly AccessReaderSystem _accessReader = default!;
+    [Dependency] private readonly AccessReaderSystem _accessReader = default!; // Goobstation - radio icons
     [Dependency] private readonly LanguageSystem _language = default!; // Einstein Engines - Language
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!; // Goobstation - Whitelisted radio channels
 
@@ -225,9 +223,9 @@ public sealed class RadioSystem : EntitySystem
 
         // Einstein Engines - Language begin
         var obfuscated = _language.ObfuscateSpeech(content, language);
-        var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, name, obfuscated, language, jobIcon, jobName);
         // Goobstation - Chat Pings
         // Added GetNetEntity(messageSource), to source
+        var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, name, obfuscated, language, jobIcon, jobName);
         var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, GetNetEntity(messageSource), null);
         var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource);
         // Einstein Engines - Language end
@@ -287,8 +285,8 @@ public sealed class RadioSystem : EntitySystem
         string name,
         string message,
         LanguagePrototype language,
-        string iconId = "JobIconNoId",
-        string? jobName = null)
+        string iconId = "JobIconNoId", // Gaby Radio icons
+        string? jobName = null) // Gaby Radio icons
     {
         // TODO: code duplication with ChatSystem.WrapMessage
         var speech = _chat.GetSpeechVerb(source, message);
@@ -357,34 +355,6 @@ public sealed class RadioSystem : EntitySystem
             }
         }
         return false;
-    }
-
-    // Gabystation -> IntrinsicVoiceModulator
-    private (ProtoId<JobIconPrototype>, string?) GetJobIcon(EntityUid ent)
-    {
-        if (_accessReader.FindAccessItemsInventory(ent, out var items))
-        {
-            foreach (var item in items)
-            {
-                // ID Card
-                if (TryComp<IdCardComponent>(item, out var id))
-                    return (id.JobIcon, id.LocalizedJobTitle);
-
-                // PDA
-                if (TryComp<PdaComponent>(item, out var pda)
-                    && pda.ContainedId != null
-                    && TryComp(pda.ContainedId, out id))
-                    return (id.JobIcon, id.LocalizedJobTitle);
-            }
-        }
-
-        if (HasComp<StationAiHeldComponent>(ent))
-            return ("JobIconStationAi", Loc.GetString("job-name-station-ai"));
-
-        if (HasComp<BorgChassisComponent>(ent) || HasComp<BorgBrainComponent>(ent))
-            return ("JobIconBorg", Loc.GetString("job-name-borg"));
-
-        return ("JobIconNoId", null);
     }
 
     // goob start - intermap transmitters

@@ -6,20 +6,19 @@
 //
 // SPDX-License-Identifier: MIT
 
-using Content.Shared._Gabystation.IntrinsicVoiceModulator;
+using Content.Goobstation.Shared.IntrinsicVoiceModulator;
 using Content.Shared.Speech;
 using Content.Shared.StatusIcon;
 using Robust.Client.UserInterface;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._Gabystation.IntrinsicVoiceModulator;
+namespace Content.Goobstation.Client.IntrinsicVoiceModulator;
 
-public sealed class IntrinsicVoiceModulatorBoundUserInterface : BoundUserInterface
+public sealed class IntrinsicVoiceModulatorBoundUserInterface(EntityUid owner, Enum uiKey)
+    : BoundUserInterface(owner, uiKey)
 {
     [ViewVariables]
     private IntrinsicVoiceModulatorWindow? _window;
-
-    public IntrinsicVoiceModulatorBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey) { }
 
     protected override void Open()
     {

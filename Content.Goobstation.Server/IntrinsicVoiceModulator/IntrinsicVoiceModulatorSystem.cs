@@ -3,9 +3,9 @@
 //
 // SPDX-License-Identifier: MIT
 
-using System.Diagnostics.CodeAnalysis;
-using Content.Shared._Gabystation.IntrinsicVoiceModulator;
-using Content.Shared._Gabystation.IntrinsicVoiceModulator.Components;
+using Content.Goobstation.Shared.IntrinsicVoiceModulator; // Goobstation
+using Content.Goobstation.Shared.IntrinsicVoiceModulator.Components; // Goobstation
+using Content.Goobstation.Shared.IntrinsicVoiceModulator.Events; // Goobstation
 using Content.Shared._Gabystation.IntrinsicVoiceModulator.Events;
 using Content.Shared._Gabystation.MalfAi.Components;
 using Content.Shared.Actions;
@@ -13,15 +13,14 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Alert;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
+using Content.Shared.Chat.RadioIconsEvents; // Goobstation
 using Content.Shared.Database;
 using Content.Shared.Popups;
-using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
-using Content.Shared.StatusIcon;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._Gabystation.IntrinsicVoiceModulator;
+namespace Content.Goobstation.Server.IntrinsicVoiceModulator;
 
 public sealed partial class IntrinsicVoiceModulatorSystem : EntitySystem
 {
@@ -49,7 +48,8 @@ public sealed partial class IntrinsicVoiceModulatorSystem : EntitySystem
         SubscribeLocalEvent<IntrinsicVoiceModulatorComponent, ToggleIntrinsicVoiceModulatorEvent>(OnToggle);
         SubscribeLocalEvent<MalfunctioningAiComponent, GiveIntrinsicVoiceModulatorEvent>(OnGive);
 
-        Subs.BuiEvents<IntrinsicVoiceModulatorComponent>(IntrinsicVoiceModulatorUiKey.Key, subs =>
+        Subs.BuiEvents<IntrinsicVoiceModulatorComponent>(IntrinsicVoiceModulatorUiKey.Key,
+            subs =>
         {
             subs.Event<IntrinsicVoiceModulatorNameChangedMessage>(OnNameChangedMessage);
             subs.Event<IntrinsicVoiceModulatorJobIconChangedMessage>(OnJobIconChanged);
