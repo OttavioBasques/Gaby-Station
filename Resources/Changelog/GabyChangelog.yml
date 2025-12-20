@@ -1648,3 +1648,11 @@ Entries:
       message: Adicionadas as traduções da aba de doações!
   id: 193
   time: '2025-12-18T03:31:27.0000000+00:00'
+- author: Unlimited-Pii
+  changes:
+    - type: Add
+      message: >-
+        Adicionado novo Tocador MP3, podendo tocar música no seu bolso ou
+        equipado em seu pescoço.
+  id: 194
+  time: '2025-12-20T15:31:24.0000000+00:00'
