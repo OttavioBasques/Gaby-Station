@@ -354,6 +354,7 @@
   name: radio host ID card
   components:
   - type: Sprite
+    sprite: Objects/Misc/id_cards.rsi
     layers:
     - state: default
     - state: idradiohost

@@ -246,7 +246,6 @@
 - type: roleLoadout
   id: JobRadioHost
   groups:
-  - CommonBackpack
   - Survival
   - Trinkets
   - Animals
@@ -255,7 +254,17 @@
   - ServiceWorkerEnvirohelm
   - ServiceWorkerEnvirosuit
   - ServiceWorkerEnvirogloves
-
+  # Civil loadout
+  - CivilianJumpsuit
+  - CivilianBackpack
+  - CivilianNeck
+  - CivilianHat
+  - CivilianFace
+  - CivilianGloves
+  - CivilianShoes # Gabystation
+  - CivilianOuterClothing
+  - CivilianBelt
+  
 # gives plasmaman a plasma breathing tank
 # other species get nothing
 - type: roleLoadout
