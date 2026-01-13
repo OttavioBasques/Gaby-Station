@@ -1710,3 +1710,27 @@ Entries:
       message: Adicionadas as mudanças do Goob até 12/01/2026 (confira a aba do Goob)!
   id: 202
   time: '2026-01-12T17:37:55.0000000+00:00'
+- author: vyas
+  changes:
+    - type: Add
+      message: Titulos OOC, vá comprar sua aura + ego!
+    - type: Add
+      message: Ghost skins, sejá um fantasma aurado.
+    - type: Add
+      message: Tokens pra cada antag e ghost role disponiveis no jogo.
+    - type: Remove
+      message: Cooldown de 1 dia por token.
+    - type: Remove
+      message: Ghost role token e Antag token.
+    - type: Remove
+      message: Diversão.
+    - type: Remove
+      message: >-
+        Tokens ghost role e antag token antigos perderam a validade, use o AHelp
+        para reembolsa-los!
+    - type: Tweak
+      message: A loja foi retrabalhada.
+    - type: Tweak
+      message: A loja agora funciona por rotaçaõ escolhendo 4 tokens a cada 2 horas.
+  id: 203
+  time: '2026-01-13T21:41:48.0000000+00:00'
