@@ -1734,3 +1734,9 @@ Entries:
       message: A loja agora funciona por rotaçaõ escolhendo 4 tokens a cada 2 horas.
   id: 203
   time: '2026-01-13T21:41:48.0000000+00:00'
+- author: vyas
+  changes:
+    - type: Remove
+      message: Blob e zumbi da loja
+  id: 204
+  time: '2026-01-14T15:05:50.0000000+00:00'
