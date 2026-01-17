@@ -1750,3 +1750,9 @@ Entries:
       message: Grid eletrica da Packed
   id: 205
   time: '2026-01-16T15:05:08.0000000+00:00'
+- author: Will-Oliver-Br
+  changes:
+    - type: Tweak
+      message: Agora o Beepsky não detecta pessoas completamente invisíveis.
+  id: 206
+  time: '2026-01-17T19:36:48.0000000+00:00'
