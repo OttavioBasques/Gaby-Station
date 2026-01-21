@@ -1784,3 +1784,9 @@ Entries:
       message: Sugar Crash a Jukebox
   id: 210
   time: '2026-01-18T15:29:16.0000000+00:00'
+- author: TheLife
+  changes:
+    - type: Tweak
+      message: Menu de opções agora oculta categorias não encontradas.
+  id: 211
+  time: '2026-01-21T20:03:12.0000000+00:00'
