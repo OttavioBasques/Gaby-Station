@@ -1790,3 +1790,9 @@ Entries:
       message: Menu de opções agora oculta categorias não encontradas.
   id: 211
   time: '2026-01-21T20:03:12.0000000+00:00'
+- author: Kyoth25f
+  changes:
+    - type: Fix
+      message: Corrigido bug de não conseguir reconectar.
+  id: 212
+  time: '2026-01-21T20:04:48.0000000+00:00'
