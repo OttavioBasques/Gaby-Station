@@ -1,20 +1,15 @@
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
 // SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 Kyoth25f <kyoth25f@gmail.com>
 // SPDX-FileCopyrightText: 2025 Milon <milonpl.git@proton.me>
 // SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 // SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 misghast <51974455+misterghast@users.noreply.github.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -43,7 +38,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Prometheus;
-using Content.Server._Gabystation;
 
 namespace Content.Goobstation.Server.StationEvents;
 
@@ -303,7 +297,7 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
     /// </summary>
     private void TrySpawnRoundstartAntags(GameDirectorComponent scheduler)
     {
-        if (scheduler.CalmAntagAmount == 0 && scheduler.NormalAntagAmount == 0 && scheduler.ExtremeAntagAmount == 0)
+        if (scheduler.NoRoundstartAntags)
             return;
 
         // Spawn antags based on GameDirectorComponent
@@ -350,11 +344,9 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
             LogMessage($"Roundstart antag chosen: {pick2}");
 
             RoundstartAntagsSelectedTotal.WithLabels(pick).Inc();
-            var rule1 = GameTicker.AddGameRule(pick);
-            _tag.AddTag(rule1, GabyConstants.GameDirectorRuleTag);
+            GameTicker.AddGameRule(pick);
             RoundstartAntagsSelectedTotal.WithLabels(pick2).Inc();
-            var rule2 = GameTicker.AddGameRule(pick2);
-            _tag.AddTag(rule2, GabyConstants.GameDirectorRuleTag);
+            GameTicker.AddGameRule(pick2);
         }
 
         return;
@@ -362,7 +354,7 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
         void IndexAndStartGameMode(string pick)
         {
             var pickProto = _prototypeManager.Index(pick);
-            if (!pickProto.TryGetComponent<GameRuleComponent>(out var pickGameRule, _factory) ||
+            if(!pickProto.TryGetComponent<GameRuleComponent>(out var pickGameRule, _factory) ||
                pickGameRule.MinPlayers > count)
             {
                 LogMessage("Not enough players for roundstart antags selected...");
@@ -371,9 +363,7 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
             LogMessage("Choosing roundstart antag");
             LogMessage($"Roundstart antag chosen: {pick}");
             RoundstartAntagsSelectedTotal.WithLabels(pick).Inc();
-            var rule = GameTicker.AddGameRule(pick);
-
-            _tag.AddTag(rule, GabyConstants.GameDirectorRuleTag); // GabyStation
+            GameTicker.AddGameRule(pick);
         }
     }
 
@@ -607,21 +597,6 @@ public sealed class GameDirectorSystem : GameRuleSystem<GameDirectorComponent>
 
                 if (!proto.TryGetComponent<StationEventComponent>(out var stationEvent, _factory))
                     continue;
-
-                var tooMuchChaos = false;
-                foreach (var chaosType in stationEvent.MaxChaos.ChaosDict)
-                {
-                    if (chaosType.Value < chaos.ChaosDict[chaosType.Key])
-                    {
-                        tooMuchChaos = true;
-                        break;
-                    }
-                }
-
-                if (tooMuchChaos)
-                {
-                    continue;
-                }
 
                 if (!_event.CanRun(proto, stationEvent, count.Players, GameTicker.RoundDuration()))
                     continue;
