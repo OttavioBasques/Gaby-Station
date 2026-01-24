@@ -97,14 +97,13 @@ public partial class ChatSystem
         bool hideLog = false,
         string? nameOverride = null,
         bool ignoreActionBlocker = false,
-        bool forceEmote = false,
-        bool voluntary = false
+        bool forceEmote = false
         )
     {
         if (!_prototypeManager.TryIndex<EmotePrototype>(emoteId, out var proto))
             return false;
 
-        return TryEmoteWithChat(source, proto, range, hideLog: hideLog, nameOverride, ignoreActionBlocker: ignoreActionBlocker, forceEmote: forceEmote, voluntary: voluntary);
+        return TryEmoteWithChat(source, proto, range, hideLog: hideLog, nameOverride, ignoreActionBlocker: ignoreActionBlocker, forceEmote: forceEmote);
     }
 
     /// <summary>
@@ -125,14 +124,13 @@ public partial class ChatSystem
         bool hideLog = false,
         string? nameOverride = null,
         bool ignoreActionBlocker = false,
-        bool forceEmote = false, // Goob - emotespam
-        bool voluntary = false // Goob - emotespam
+        bool forceEmote = false
         )
     {
         if (!forceEmote && !AllowedToUseEmote(source, emote))
             return false;
 
-        var didEmote = TryEmoteWithoutChat(source, emote, ignoreActionBlocker, voluntary: voluntary); // Goob - emotespam
+        var didEmote = TryEmoteWithoutChat(source, emote, ignoreActionBlocker, voluntary: !forceEmote);
 
         // check if proto has valid message for chat
         if (didEmote && emote.ChatMessages.Count != 0)
@@ -140,7 +138,7 @@ public partial class ChatSystem
             // not all emotes are loc'd, but for the ones that are we pass in entity
             var action = Loc.GetString(_random.Pick(emote.ChatMessages), ("entity", source));
             var language = _language.GetLanguage(source); // Einstein Engines - Language
-            SendEntityEmote(source, action, range, nameOverride, language, hideLog: hideLog, checkEmote: false, ignoreActionBlocker: ignoreActionBlocker); // Einstein Engines - Language
+            SendEntityEmote(source, action, range, nameOverride, language, hideLog: hideLog, checkEmote: false, ignoreActionBlocker: ignoreActionBlocker, forced: forceEmote); // Einstein Engines - Language
         }
 
         return didEmote;
@@ -217,7 +215,7 @@ public partial class ChatSystem
     /// <param name="uid"></param>
     /// <param name="textInput"></param>
     /// <returns>True if the chat message should be displayed (because the emote was explicitly cancelled), false if it should not be.</returns>
-    private bool TryEmoteChatInput(EntityUid uid, string textInput)
+    private bool TryEmoteChatInput(EntityUid uid, string textInput, bool forced = false) // goob edit - add forced argument
     {
         var actionTrimmedLower = TrimPunctuation(textInput.ToLower());
         if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emote))
@@ -226,7 +224,7 @@ public partial class ChatSystem
         if (!AllowedToUseEmote(uid, emote))
             return true;
 
-        return TryInvokeEmoteEvent(uid, emote, voluntary: true); // Goob - emotespam
+        return TryInvokeEmoteEvent(uid, emote, voluntary: !forced); // Goob - emotespam
 
         static string TrimPunctuation(string textInput)
         {
