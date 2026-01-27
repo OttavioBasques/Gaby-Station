@@ -1848,3 +1848,9 @@ Entries:
       message: A genética chegou.
   id: 220
   time: '2026-01-27T16:34:35.0000000+00:00'
+- author: SrKolobanov
+  changes:
+    - type: Tweak
+      message: Buffs no equipamento de CBURN.
+  id: 221
+  time: '2026-01-27T16:37:16.0000000+00:00'
