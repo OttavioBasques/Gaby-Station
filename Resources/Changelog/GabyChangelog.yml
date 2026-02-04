@@ -1907,3 +1907,11 @@ Entries:
         nome apareça.
   id: 229
   time: '2026-02-04T21:12:13.0000000+00:00'
+- author: Dreykor e Kaua
+  changes:
+    - type: Tweak
+      message: >-
+        Alterações diversas nas regras do servidor, como metashield, regras de
+        nomes e muitos outros, não esqueça de lê-las!
+  id: 230
+  time: '2026-02-04T21:16:05.0000000+00:00'
