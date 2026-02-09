@@ -307,6 +307,13 @@
   id: ClothingNeckAutismPin
   storage:
     back:
+    - ClothingNeckAutismPin
+  groupBy: "pin"
+
+- type: loadout
+  id: ClothingNeckGoldAutismPin
+  storage:
+    back:
     - ClothingNeckGoldAutismPin
   groupBy: "pin"
 
