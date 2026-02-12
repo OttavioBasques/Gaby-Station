@@ -1953,3 +1953,17 @@ Entries:
       message: Adiciona câmera fotográfica ao loadout.
   id: 236
   time: '2026-02-12T18:56:20.0000000+00:00'
+- author: Day-OS
+  changes:
+    - type: Add
+      message: Markings para a espécie tajaran (incluindo underwear)
+    - type: Tweak
+      message: Tajara agora são digitigrados
+    - type: Tweak
+      message: Tajara são imunes a cacos de vidro e minas terrestres
+    - type: Tweak
+      message: Tajara soltam bola de pelo (como Deus quis)
+    - type: Tweak
+      message: Tajara tem visão no escuro
+  id: 237
+  time: '2026-02-12T19:17:37.0000000+00:00'
