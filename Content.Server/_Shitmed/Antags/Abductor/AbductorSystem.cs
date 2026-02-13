@@ -87,7 +87,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
                 var consoleTransform = Transform(id);
                 var stationUid = _entityManager.GetEntity(station.Value.StationId);
 
-                if (_stationSystem.GetLargestGrid(Comp<StationDataComponent>(stationUid)) is not { } gridUid)
+                if (_stationSystem.GetLargestGrid(stationUid) is not { } gridUid)
                     continue;
 
                 var gridTransform = Transform(gridUid);
