@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 using Content.Shared.EntityEffects;
 using Content.Shared.BloodCult;
 
-namespace Content.Server.EntityEffects.Effects;
+namespace Content.Shared._Funkystation.BloodCult.EntityEffects.Effects;
 
 //[UsedImplicitly]
 public sealed partial class DeCultify : EntityEffect
