@@ -1,4 +1,8 @@
-﻿using Content.Goobstation.Maths.FixedPoint;
+// SPDX-FileCopyrightText: 2026 Space Station 14 Contributors
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Organ;
