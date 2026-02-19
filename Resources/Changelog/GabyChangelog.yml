@@ -2019,3 +2019,9 @@ Entries:
   changes: []
   id: 245
   time: '2026-02-19T16:26:01.0000000+00:00'
+- author: Will-Oliver-Br
+  changes:
+    - type: Tweak
+      message: Adiciona herético, culto cósmico e culto do sangue em midround.
+  id: 246
+  time: '2026-02-19T16:37:15.0000000+00:00'
