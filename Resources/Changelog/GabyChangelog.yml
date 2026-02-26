@@ -2053,3 +2053,11 @@ Entries:
       message: O culto do sangue foi retrabalhado.
   id: 250
   time: '2026-02-26T14:14:44.0000000+00:00'
+- author: TheRealHeartbeat
+  changes:
+    - type: Tweak
+      message: Armas da serie X-00 agora auto-recarregam.
+    - type: Tweak
+      message: Arma laser agora tem 25 tiros invés de 50.
+  id: 251
+  time: '2026-02-26T19:50:50.0000000+00:00'
