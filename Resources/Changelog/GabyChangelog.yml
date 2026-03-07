@@ -2187,3 +2187,11 @@ Entries:
       message: Shadowkins agora não são mais vulneraveis ao flash
   id: 263
   time: '2026-03-07T15:25:57.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Add
+      message: >-
+        Novas Músicas na Jukebox, Vermilion, Pirata Oficial, Dois Navegantes e
+        Leave me Alone
+  id: 264
+  time: '2026-03-07T15:45:52.0000000+00:00'
