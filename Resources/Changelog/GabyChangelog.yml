@@ -2111,3 +2111,14 @@ Entries:
       message: Prisoneiros não morrem por não poder comprar comida mais.
   id: 258
   time: '2026-03-07T14:04:35.0000000+00:00'
+- author: SrKolobanov
+  changes:
+    - type: Add
+      message: 'Uma nova espada foi adicionada para o capitão: a Lâmina da Rosa.'
+    - type: Tweak
+      message: >-
+        O sabre reserva do armário da capitão foi substituído pelo "kit de
+        sabres", ele permite escolher entre o sabre de capitão e a nova Lâmina
+        da Rosa.
+  id: 259
+  time: '2026-03-07T14:36:23.0000000+00:00'
