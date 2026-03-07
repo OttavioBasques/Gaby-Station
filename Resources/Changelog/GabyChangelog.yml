@@ -2122,3 +2122,11 @@ Entries:
         da Rosa.
   id: 259
   time: '2026-03-07T14:36:23.0000000+00:00'
+- author: TheRealHeartbeat
+  changes:
+    - type: Tweak
+      message: Agora você pode alterar o acesso do ID do prisoneiro (o trabalho.)
+    - type: Fix
+      message: Prisoneiros não tem mais acesso pra sair da genpop.
+  id: 260
+  time: '2026-03-07T14:37:37.0000000+00:00'
