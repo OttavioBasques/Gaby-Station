@@ -2219,3 +2219,13 @@ Entries:
       message: Adiciona cirurgia de pacifismo
   id: 268
   time: '2026-03-14T17:15:12.0000000+00:00'
+- author: Will-Oliver-Br
+  changes:
+    - type: Tweak
+      message: >-
+        Agora a bolsa de sangue foi substituída pela bolsa intravenosa, embora
+        ainda seja possível obter por outros meios.
+    - type: Add
+      message: Adiciona bolsa intravenosa e suporte para bolsa intravenosa.
+  id: 269
+  time: '2026-03-14T17:20:16.0000000+00:00'
