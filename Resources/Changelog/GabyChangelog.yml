@@ -2309,3 +2309,9 @@ Entries:
       message: Os revolucionários foram retrabalhado.
   id: 281
   time: '2026-04-03T20:41:31.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Add
+      message: Resprite dos Bingles
+  id: 282
+  time: '2026-04-03T20:42:32.0000000+00:00'
