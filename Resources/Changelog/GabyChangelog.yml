@@ -2315,3 +2315,9 @@ Entries:
       message: Resprite dos Bingles
   id: 282
   time: '2026-04-03T20:42:32.0000000+00:00'
+- author: Heartbeat
+  changes:
+    - type: Fix
+      message: As botas de combate usam audio mono agora.
+  id: 283
+  time: '2026-04-03T20:45:39.0000000+00:00'
