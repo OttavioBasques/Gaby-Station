@@ -2321,3 +2321,15 @@ Entries:
       message: As botas de combate usam audio mono agora.
   id: 283
   time: '2026-04-03T20:45:39.0000000+00:00'
+- author: SrKolobanov
+  changes:
+    - type: Add
+      message: >-
+        Sistema de recall de itens, você pode vincular apenas um item que tenha
+        essa propriedade por vez.
+    - type: Tweak
+      message: >-
+        Martelo do Singuloth Knight ganhou recall. Mais difícil de ser roubado
+        por um Greytider.
+  id: 284
+  time: '2026-04-03T23:46:25.0000000+00:00'
