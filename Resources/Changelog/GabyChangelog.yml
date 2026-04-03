@@ -2303,3 +2303,9 @@ Entries:
       message: 7 novos kits para Traidores.
   id: 280
   time: '2026-04-03T02:02:54.0000000+00:00'
+- author: Will-Oliver-Br
+  changes:
+    - type: Tweak
+      message: Os revolucionários foram retrabalhado.
+  id: 281
+  time: '2026-04-03T20:41:31.0000000+00:00'
