@@ -2396,3 +2396,11 @@ Entries:
       message: Os trajes agora são imunes a tiros de seringa.
   id: 291
   time: '2026-04-11T04:17:33.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Tweak
+      message: Mudança no surgimento de revs e xenos (agora mais comuns).
+    - type: Add
+      message: Adicionado access breaker e DNA scrambler no pacote infiltração.
+  id: 292
+  time: '2026-04-11T22:36:53.0000000+00:00'
