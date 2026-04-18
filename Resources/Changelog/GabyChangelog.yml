@@ -2508,3 +2508,9 @@ Entries:
       message: O manifesto revolucionário voltou com suas frases.
   id: 305
   time: '2026-04-18T23:27:54.0000000+00:00'
+- author: Will-Oliver-Br
+  changes:
+    - type: Add
+      message: Adiciona o SegurApartamento para organizar a segurança em esquadrões.
+  id: 306
+  time: '2026-04-18T23:48:33.0000000+00:00'
