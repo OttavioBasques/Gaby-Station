@@ -2472,3 +2472,9 @@ Entries:
       message: A capa, mantle e ensemble do HOS agora tem uma câmera.
   id: 299
   time: '2026-04-14T03:12:58.0000000+00:00'
+- author: Will-Oliver-Br
+  changes:
+    - type: Add
+      message: Adiciona alergias na customização de personagem.
+  id: 300
+  time: '2026-04-18T00:40:12.0000000+00:00'
