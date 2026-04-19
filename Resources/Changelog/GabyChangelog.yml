@@ -2532,3 +2532,11 @@ Entries:
       message: Morph (Novo Antagonista de Midround)
   id: 309
   time: '2026-04-19T19:12:01.0000000+00:00'
+- author: TheRealHeartbeat
+  changes:
+    - type: Fix
+      message: >-
+        A capa do segurança chefe usa o sprite correto invés do sprite de
+        bodycam.
+  id: 310
+  time: '2026-04-19T20:55:34.0000000+00:00'
