@@ -2526,3 +2526,9 @@ Entries:
       message: 4 músicas de Heaven Pierce Her a jukebox.
   id: 308
   time: '2026-04-19T00:22:16.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Add
+      message: Morph (Novo Antagonista de Midround)
+  id: 309
+  time: '2026-04-19T19:12:01.0000000+00:00'
