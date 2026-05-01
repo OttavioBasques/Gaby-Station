@@ -2552,3 +2552,11 @@ Entries:
       message: Adiciona pistola holosinalizadora.
   id: 312
   time: '2026-04-19T23:16:56.0000000+00:00'
+- author: Heartbeat
+  changes:
+    - type: Fix
+      message: >-
+        O escudo de bala anti motim agora tem um sprite quando está sendo
+        segurado.
+  id: 313
+  time: '2026-05-01T02:04:28.0000000+00:00'
