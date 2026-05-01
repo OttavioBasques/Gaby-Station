@@ -2584,3 +2584,9 @@ Entries:
       message: Luvas "Berserker" da caixa x-00 agora são insuladas.
   id: 317
   time: '2026-05-01T03:13:08.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Add
+      message: Revs agoram spawnam no meio da rodada.
+  id: 318
+  time: '2026-05-01T14:54:10.0000000+00:00'
