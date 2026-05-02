@@ -2590,3 +2590,15 @@ Entries:
       message: Revs agoram spawnam no meio da rodada.
   id: 318
   time: '2026-05-01T14:54:10.0000000+00:00'
+- author: Crono209
+  changes:
+    - type: Tweak
+      message: Geneticista QOL.
+    - type: Tweak
+      message: Os buffers dos computadores de geneticista foram separados.
+    - type: Tweak
+      message: >-
+        Agora é garantido que ao irradiar um bloco no computador de geneticista
+        o valor dele vai mudar.
+  id: 319
+  time: '2026-05-02T13:49:24.0000000+00:00'
