@@ -2602,3 +2602,9 @@ Entries:
         o valor dele vai mudar.
   id: 319
   time: '2026-05-02T13:49:24.0000000+00:00'
+- author: Pepe
+  changes:
+    - type: Add
+      message: Port óculos medchem/medchemflash
+  id: 320
+  time: '2026-05-03T00:20:22.0000000+00:00'
