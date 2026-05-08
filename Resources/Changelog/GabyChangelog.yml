@@ -2709,3 +2709,9 @@ Entries:
       message: Corrigido LoneOps ganhar 300 TC ao declarar guerra.
   id: 324
   time: '2026-05-07T23:42:11.0000000+00:00'
+- author: Janie-Smith
+  changes:
+    - type: Add
+      message: Janie Plushie
+  id: 325
+  time: '2026-05-08T02:17:05.0000000+00:00'
