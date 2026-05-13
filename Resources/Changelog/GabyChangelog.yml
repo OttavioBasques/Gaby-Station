@@ -2759,3 +2759,15 @@ Entries:
         Goob)!
   id: 330
   time: '2026-05-08T02:41:38.0000000+00:00'
+- author: Heartbeat
+  changes:
+    - type: Tweak
+      message: >-
+        Luxury pen agora quase faz nada em pressão normal; A salic, oxand e dex+
+        dela foram removidos.
+    - type: Tweak
+      message: >-
+        Luxurium e Minersalvine agora funcionam apenas entre 25-51 KPA para
+        combinar com PKAs.
+  id: 331
+  time: '2026-05-13T00:28:31.0000000+00:00'
