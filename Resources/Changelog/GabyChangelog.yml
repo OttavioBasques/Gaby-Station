@@ -2791,3 +2791,9 @@ Entries:
       message: O kit Chester padrão deixa o arsenal do BSO.
   id: 333
   time: '2026-05-16T23:39:10.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Tweak
+      message: Metashield reformulado (Leiam as regras do servidor)
+  id: 334
+  time: '2026-05-16T23:45:25.0000000+00:00'
