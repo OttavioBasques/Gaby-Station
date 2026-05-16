@@ -2771,3 +2771,9 @@ Entries:
         combinar com PKAs.
   id: 331
   time: '2026-05-13T00:28:31.0000000+00:00'
+- author: Heartbeat
+  changes:
+    - type: Fix
+      message: Caixas de circuito de durand e gygax são categorizadas corretamente.
+  id: 332
+  time: '2026-05-16T13:05:52.0000000+00:00'
