@@ -2797,3 +2797,16 @@ Entries:
       message: Metashield reformulado (Leiam as regras do servidor)
   id: 334
   time: '2026-05-16T23:45:25.0000000+00:00'
+- author: O-Verdadeiro-Biel
+  changes:
+    - type: Tweak
+      message: >-
+        Agora a habilidade de explodir máquinas e também a habilidade de fazer
+        elas viraram mobs agressivos funciona em computadores e máquinas de
+        venda.
+    - type: Fix
+      message: >-
+        Agora a IA Malfuncional não perde a habildade da fábrica de robôs quando
+        ela cancela a ação de colocar.
+  id: 335
+  time: '2026-05-17T14:49:03.0000000+00:00'
