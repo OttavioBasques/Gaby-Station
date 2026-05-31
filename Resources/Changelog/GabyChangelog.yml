@@ -2864,3 +2864,11 @@ Entries:
       message: Glacier foi removido da rotação de mapas.
   id: 342
   time: '2026-05-31T01:59:25.0000000+00:00'
+- author: Heartbeat
+  changes:
+    - type: Fix
+      message: >-
+        Agora granadas de borracha e payloads REALMENTE precisam ser
+        pesquisadas.
+  id: 343
+  time: '2026-05-31T02:01:31.0000000+00:00'
