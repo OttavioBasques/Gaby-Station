@@ -2884,3 +2884,11 @@ Entries:
       message: Traduções. Muitas traduções. Muitas, muitas traduções.
   id: 345
   time: '2026-05-31T03:06:28.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Tweak
+      message: Reskin da Dreadnought
+    - type: Tweak
+      message: Metashield mais amigavel
+  id: 346
+  time: '2026-06-02T11:53:16.0000000+00:00'
