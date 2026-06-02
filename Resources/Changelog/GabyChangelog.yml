@@ -2920,3 +2920,9 @@ Entries:
       message: Alguns ícones de trabalho foram alterados.
   id: 349
   time: '2026-06-02T13:18:06.0000000+00:00'
+- author: Victor Job and Struater
+  changes:
+    - type: Tweak
+      message: Core azul do BSO alterada pra verde
+  id: 350
+  time: '2026-06-02T13:20:26.0000000+00:00'
