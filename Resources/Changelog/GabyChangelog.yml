@@ -2892,3 +2892,13 @@ Entries:
       message: Metashield mais amigavel
   id: 346
   time: '2026-06-02T11:53:16.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Tweak
+      message: Alterado o mapping da Sec
+    - type: Tweak
+      message: Sprites do borg dog
+    - type: Tweak
+      message: Alguns sprites novos do goob recoloridos
+  id: 347
+  time: '2026-06-02T12:00:56.0000000+00:00'
