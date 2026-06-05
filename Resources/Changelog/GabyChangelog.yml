@@ -2975,3 +2975,9 @@ Entries:
       message: Corrigido alguns sprites da sec e bso estarem nas cores antigas
   id: 357
   time: '2026-06-05T16:05:11.0000000+00:00'
+- author: Lachryphage, CRISO
+  changes:
+    - type: Add
+      message: A estação Eclipse Starport foi adicionada à rotação de mapas.
+  id: 358
+  time: '2026-06-05T16:14:45.0000000+00:00'
