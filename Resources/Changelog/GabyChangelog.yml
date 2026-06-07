@@ -2995,3 +2995,9 @@ Entries:
       message: Icon do Warden agora é um olho, big brother is watching
   id: 360
   time: '2026-06-05T18:08:01.0000000+00:00'
+- author: Will-Oliver-Br
+  changes:
+    - type: Tweak
+      message: Agora o áudio abafa quando passa por paredes.
+  id: 361
+  time: '2026-06-07T14:00:26.0000000+00:00'
