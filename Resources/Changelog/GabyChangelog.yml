@@ -3075,3 +3075,9 @@ Entries:
       message: Poster de recrutamento de DS.
   id: 370
   time: '2026-06-07T15:33:50.0000000+00:00'
+- author: Unlimited-Pii
+  changes:
+    - type: Remove
+      message: Removida tooltip dos ícones do chat.
+  id: 371
+  time: '2026-06-07T15:59:37.0000000+00:00'
