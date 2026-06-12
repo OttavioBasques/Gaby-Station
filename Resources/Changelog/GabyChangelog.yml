@@ -3087,3 +3087,13 @@ Entries:
       message: Removidos alguns huds dos fantasmas.
   id: 372
   time: '2026-06-12T19:06:24.0000000+00:00'
+- author: cristalyssd
+  changes:
+    - type: Remove
+      message: Larp de atmo.
+    - type: Tweak
+      message: >-
+        Ajusta o TEG para reduzir desperdício e incentivar configurações mais
+        eficientes.
+  id: 373
+  time: '2026-06-12T19:09:51.0000000+00:00'
