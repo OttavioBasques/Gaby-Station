@@ -3151,3 +3151,9 @@ Entries:
       message: 'Proto RCD pode desconstruir airlocks, independente de acesso ou tranca. '
   id: 380
   time: '2026-06-21T14:25:12.0000000+00:00'
+- author: isTheSuperN0va
+  changes:
+    - type: Add
+      message: Nova ui do console de comunicações
+  id: 381
+  time: '2026-06-20T21:49:22.0000000+00:00'
