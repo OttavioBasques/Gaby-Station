@@ -3131,3 +3131,9 @@ Entries:
       message: Plasma miner foi removido de diversos mapas.
   id: 377
   time: '2026-06-21T16:56:41.0000000+00:00'
+- author: CRISO
+  changes:
+    - type: Add
+      message: Adicionado Life Goes On no lobby. Descanse em paz Oliver Tree.
+  id: 378
+  time: '2026-06-20T17:27:40.0000000+00:00'
