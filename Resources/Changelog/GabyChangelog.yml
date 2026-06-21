@@ -3111,3 +3111,9 @@ Entries:
       message: Pequenas correções com os indutores.
   id: 375
   time: '2026-06-12T19:15:29.0000000+00:00'
+- author: O-Verdadeiro-Biel
+  changes:
+    - type: Fix
+      message: Agora ao dividir spesos suspeitos, você terá spesos suspeitos!
+  id: 376
+  time: '2026-06-21T16:55:53.0000000+00:00'
