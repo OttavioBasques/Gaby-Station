@@ -3117,3 +3117,17 @@ Entries:
       message: Agora ao dividir spesos suspeitos, você terá spesos suspeitos!
   id: 376
   time: '2026-06-21T16:55:53.0000000+00:00'
+- author: CRISOOOOO
+  changes:
+    - type: Add
+      message: Telefones agora estão presentes nos mapas.
+    - type: Add
+      message: >-
+        Saltern, Packed, Omega, Cluster, Box, Meta, Marathon, Cog, Oasis agora
+        possuem genética, roboticistas e impressora de livros.
+    - type: Add
+      message: Falcon agora possui genética.
+    - type: Remove
+      message: Plasma miner foi removido de diversos mapas.
+  id: 377
+  time: '2026-06-21T16:56:41.0000000+00:00'
