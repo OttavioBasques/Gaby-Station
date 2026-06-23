@@ -3171,3 +3171,9 @@ Entries:
       message: Agora as câmeras ficam vermelhas quando estão na visão da IA.
   id: 383
   time: '2026-06-23T19:59:57.0000000+00:00'
+- author: Heartbeat
+  changes:
+    - type: Add
+      message: Traduções. Não tantas, mas traduções.
+  id: 384
+  time: '2026-06-23T20:58:16.0000000+00:00'
