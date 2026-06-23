@@ -9,6 +9,7 @@
   - type: Clothing
     sprite: DeltaV/Objects/Weapons/Guns/k38master.rsi
   - type: RevolverAmmoProvider
+    proto: CartridgeWatson
     capacity: 8
     chambers: [ True, True, True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null, null, null ]
