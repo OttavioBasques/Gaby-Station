@@ -15,7 +15,7 @@
 
 - type: entity
   id: BulletWatsonPractice
-  name: bullet (.watson practice)
+  name: bullet (.38 watson practice)
   parent: BaseBulletPractice
   categories: [ HideSpawnMenu ]
   components:

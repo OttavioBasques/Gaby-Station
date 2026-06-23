@@ -87,7 +87,7 @@
   id: MagazineBoxWatsonUranium
   parent: BaseMagazineBoxWatson
   name: ammunition box (.38 watson uranium)
-  description: A cardboard box of .watson rounds. Intended to hold exotic uranium-core ammunition.
+  description: A cardboard box of .38 watson rounds. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeWatsonUranium
