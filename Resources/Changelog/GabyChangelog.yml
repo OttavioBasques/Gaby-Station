@@ -3201,3 +3201,15 @@ Entries:
         equipamento foram alterados para refletir isso.
   id: 385
   time: '2026-06-24T18:02:09.0000000+00:00'
+- author: CRISOOOOO
+  changes:
+    - type: Add
+      message: Bitrunning foi adicionado nos mapas!
+    - type: Tweak
+      message: Oasis não é mais um mapa highpop.
+    - type: Tweak
+      message: Eclipse agora é um mapa highpop.
+    - type: Fix
+      message: Cluster agora tem spawner de plasma.
+  id: 386
+  time: '2026-06-24T21:18:00.0000000+00:00'
