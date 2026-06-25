@@ -3213,3 +3213,19 @@ Entries:
       message: Cluster agora tem spawner de plasma.
   id: 386
   time: '2026-06-24T21:18:00.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Tweak
+      message: Alterado Envirosuits da sec para azul
+    - type: Tweak
+      message: Alterado alguns sprites para azul
+    - type: Tweak
+      message: Alterado Envirosuits do gso para verde
+    - type: Tweak
+      message: Alterado cor do rádio da sec e console de comms
+    - type: Tweak
+      message: Alterado icones de esquadrão para um azul claro
+    - type: Tweak
+      message: Alterado placa de direção da prisão
+  id: 387
+  time: '2026-06-25T18:05:37.0000000+00:00'
