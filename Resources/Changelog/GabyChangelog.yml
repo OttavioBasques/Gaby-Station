@@ -3239,3 +3239,13 @@ Entries:
       message: Alarmes de ar novamente requerem acesso de atmosfera.
   id: 388
   time: '2026-06-26T02:35:41.0000000+00:00'
+- author: O-Verdadeiro-Biel
+  changes:
+    - type: Fix
+      message: Corrigido bug do fabricador nuclear não podendo ser linkado no silo.
+    - type: Fix
+      message: >-
+        Agora a placa do computador de monitoramento do reator nuclear pode ser
+        fabricada.
+  id: 389
+  time: '2026-06-20T20:04:02.0000000+00:00'
