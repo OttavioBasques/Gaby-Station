@@ -3249,3 +3249,9 @@ Entries:
         fabricada.
   id: 389
   time: '2026-06-20T20:04:02.0000000+00:00'
+- author: VictorJob
+  changes:
+    - type: Tweak
+      message: Alterado sprites da inspector, Kahemmer e energy balls..
+  id: 390
+  time: '2026-06-20T20:27:08.0000000+00:00'
