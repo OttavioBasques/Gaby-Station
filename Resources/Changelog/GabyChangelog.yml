@@ -3229,3 +3229,13 @@ Entries:
       message: Alterado placa de direção da prisão
   id: 387
   time: '2026-06-25T18:05:37.0000000+00:00'
+- author: Unlimited-Pii
+  changes:
+    - type: Add
+      message: >-
+        Adicionado requisito de acesso atmosférico para o console do Reator
+        Hiper Torus.
+    - type: Tweak
+      message: Alarmes de ar novamente requerem acesso de atmosfera.
+  id: 388
+  time: '2026-06-26T02:35:41.0000000+00:00'
