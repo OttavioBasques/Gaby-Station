@@ -3279,3 +3279,15 @@ Entries:
         restaurado aos exploradores até o merge do rework.
   id: 393
   time: '2026-06-27T15:57:56.0000000+00:00'
+- author: Unlimited-Pii
+  changes:
+    - type: Tweak
+      message: >-
+        Coletores de radiação, além da radiação agora necessitam de proximidade
+        com Singularidade ou Cristal de Super Matéria para gerarem energia.
+    - type: Remove
+      message: >-
+        Coletores de radiação agora produzem menos energia por unidade de
+        radiação (impacto real apenas em estações maiores).
+  id: 394
+  time: '2026-06-27T16:25:13.0000000+00:00'
