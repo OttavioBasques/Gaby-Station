@@ -3271,3 +3271,11 @@ Entries:
       message: adicionado placas de mineração, brigmed e genética com o mesmo estilo
   id: 392
   time: '2026-06-26T18:31:36.0000000+00:00'
+- author: Unlimited-Pii
+  changes:
+    - type: Fix
+      message: >-
+        Acesso a vend de tickets e roupas da mineração temporariamente
+        restaurado aos exploradores até o merge do rework.
+  id: 393
+  time: '2026-06-27T15:57:56.0000000+00:00'
