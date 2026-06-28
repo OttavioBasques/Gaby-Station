@@ -3291,3 +3291,21 @@ Entries:
         radiação (impacto real apenas em estações maiores).
   id: 394
   time: '2026-06-27T16:25:13.0000000+00:00'
+- author: Unlimited-Pii
+  changes:
+    - type: Add
+      message: >-
+        Adicionado os novos acessos como acessos extendidos em rounds lowpop
+        para funções não especializadas.
+    - type: Fix
+      message: Virologista agora possui o próprio acesso.
+    - type: Fix
+      message: >-
+        Ícone de trabalho do Geneticista alterado para a mesma cor do restante
+        da Sci.
+    - type: Remove
+      message: >-
+        Removido títulos alternativos de carteiro, minerador e roboticista das
+        funções sem tal acesso como padrão.
+  id: 395
+  time: '2026-06-28T17:33:47.0000000+00:00'
