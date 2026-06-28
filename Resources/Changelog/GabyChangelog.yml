@@ -3309,3 +3309,11 @@ Entries:
         funções sem tal acesso como padrão.
   id: 395
   time: '2026-06-28T17:33:47.0000000+00:00'
+- author: Unlimited-Pii
+  changes:
+    - type: Fix
+      message: >-
+        Airlocks do correio agora devem spawnar corretamente durante
+        carregamento do mapa.
+  id: 396
+  time: '2026-06-28T17:37:01.0000000+00:00'
