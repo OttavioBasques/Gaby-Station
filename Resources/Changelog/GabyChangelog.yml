@@ -3323,3 +3323,9 @@ Entries:
       message: A interface fantasma foi melhorada.
   id: 397
   time: '2026-06-29T20:42:10.0000000+00:00'
+- author: AgentePanela
+  changes:
+    - type: Add
+      message: Aba no manifesto de fim de turno com o ranking de jogadores mais ricos.
+  id: 398
+  time: '2026-06-29T21:04:19.0000000+00:00'
