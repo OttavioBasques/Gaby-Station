@@ -9,4 +9,7 @@
   id: SpeedLoaderWatson
   
 - type: Tag
+  id: HideGhostWarp
+
+- type: Tag
   id: EletricRadiation
